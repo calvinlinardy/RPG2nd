@@ -12,10 +12,21 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D myRb;
     Animator myAnim;
 
+    public static PlayerController instance;
+
     void Start()
     {
         myRb = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
+
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     void Update()
