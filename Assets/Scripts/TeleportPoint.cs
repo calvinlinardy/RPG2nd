@@ -5,6 +5,7 @@ using UnityEngine;
 public class TeleportPoint : MonoBehaviour
 {
     [SerializeField] string sceneToLoad = null;
+    public string spawnPointName = "SpawnPoint";
 
     SceneLoader sceneLoader;
 

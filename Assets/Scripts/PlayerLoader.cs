@@ -8,7 +8,7 @@ public class PlayerLoader : MonoBehaviour
 
     private void Start()
     {
-        if (PlayerController.instance == null)
+        if (Player.instance == null)
         {
             Instantiate(player);
         }
