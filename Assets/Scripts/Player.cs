@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     [SerializeField] float movementSpeed = 5f;
+    float x = 0;
     float movementX = 0;
     float movementY = 0;
-    private bool isFrozen = false;
 
     //Cache references
     Rigidbody2D myRb;
@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     {
         myRb = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
+        x = movementSpeed;
 
         if (instance == null)
         {
@@ -40,7 +41,7 @@ public class Player : MonoBehaviour
         movementX = Input.GetAxisRaw("Horizontal");
         movementY = Input.GetAxisRaw("Vertical");
 
-        myRb.velocity = new Vector2(movementX, movementY) * movementSpeed;
+        myRb.velocity = new Vector2(movementX, movementY) * x;
 
         myAnim.SetFloat("moveX", myRb.velocity.x);
         myAnim.SetFloat("moveY", myRb.velocity.y);
@@ -56,17 +57,11 @@ public class Player : MonoBehaviour
     {
         Player.instance.transform.position = GameObject.Find(teleportPoint.spawnPointName).transform.position;
         UIFade.instance.FadeFromBlack();
-        isFrozen = false;
+        x = movementSpeed;
     }
 
     public void FreezeCharacter()
     {
-        isFrozen = true;
-
-        while (isFrozen)
-        {
-            movementSpeed = 0f;
-        }
-        return;
+        x = 0f;
     }
 }
