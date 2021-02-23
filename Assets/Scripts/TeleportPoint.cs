@@ -20,5 +20,6 @@ public class TeleportPoint : MonoBehaviour
         {
             sceneLoader.EnteringTeleport(sceneToLoad);
         }
+        Debug.Log(sceneToLoad);
     }
 }
