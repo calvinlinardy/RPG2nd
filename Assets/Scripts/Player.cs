@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] float movementSpeed = 5f;
     float movementX = 0;
     float movementY = 0;
+    private bool isFrozen = false;
 
     //Cache references
     Rigidbody2D myRb;
@@ -35,6 +36,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         teleportPoint = FindObjectOfType<TeleportPoint>();
+
         movementX = Input.GetAxisRaw("Horizontal");
         movementY = Input.GetAxisRaw("Vertical");
 
@@ -53,5 +55,18 @@ public class Player : MonoBehaviour
     public void LoadState(Scene scene, LoadSceneMode mode)
     {
         Player.instance.transform.position = GameObject.Find(teleportPoint.spawnPointName).transform.position;
+        UIFade.instance.FadeFromBlack();
+        isFrozen = false;
+    }
+
+    public void FreezeCharacter()
+    {
+        isFrozen = true;
+
+        while (isFrozen)
+        {
+            movementSpeed = 0f;
+        }
+        return;
     }
 }
