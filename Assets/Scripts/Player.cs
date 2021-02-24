@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] float movementSpeed = 5f;
     float movementX = 0;
     float movementY = 0;
-    private bool isFrozen = false;
+    public bool canMove = true;
 
     //Cache references
     Rigidbody2D myRb;
@@ -40,15 +40,25 @@ public class Player : MonoBehaviour
         movementX = Input.GetAxisRaw("Horizontal");
         movementY = Input.GetAxisRaw("Vertical");
 
-        myRb.velocity = new Vector2(movementX, movementY) * movementSpeed;
+        if (canMove)
+        {
+            myRb.velocity = new Vector2(movementX, movementY) * movementSpeed;
+        }
+        else
+        {
+            myRb.velocity = Vector2.zero;
+        }
 
         myAnim.SetFloat("moveX", myRb.velocity.x);
         myAnim.SetFloat("moveY", myRb.velocity.y);
 
         if (movementX == 1 || movementX == -1 || movementY == 1 || movementY == -1)
         {
-            myAnim.SetFloat("lastMoveX", movementX);
-            myAnim.SetFloat("lastMoveY", movementY);
+            if (canMove)
+            {
+                myAnim.SetFloat("lastMoveX", movementX);
+                myAnim.SetFloat("lastMoveY", movementY);
+            }
         }
     }
 
@@ -56,17 +66,11 @@ public class Player : MonoBehaviour
     {
         Player.instance.transform.position = GameObject.Find(teleportPoint.spawnPointName).transform.position;
         UIFade.instance.FadeFromBlack();
-        isFrozen = false;
+        canMove = true;
     }
 
     public void FreezeCharacter()
     {
-        isFrozen = true;
-
-        while (isFrozen)
-        {
-            movementSpeed = 0f;
-        }
-        return;
+        canMove = false;
     }
 }
