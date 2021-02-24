@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     [SerializeField] float movementSpeed = 5f;
-    float x = 0;
     float movementX = 0;
     float movementY = 0;
+    public bool canMove = true;
 
     //Cache references
     Rigidbody2D myRb;
@@ -21,7 +21,6 @@ public class Player : MonoBehaviour
     {
         myRb = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
-        x = movementSpeed;
 
         if (instance == null)
         {
@@ -41,15 +40,25 @@ public class Player : MonoBehaviour
         movementX = Input.GetAxisRaw("Horizontal");
         movementY = Input.GetAxisRaw("Vertical");
 
-        myRb.velocity = new Vector2(movementX, movementY) * x;
+        if (canMove)
+        {
+            myRb.velocity = new Vector2(movementX, movementY) * movementSpeed;
+        }
+        else
+        {
+            myRb.velocity = Vector2.zero;
+        }
 
         myAnim.SetFloat("moveX", myRb.velocity.x);
         myAnim.SetFloat("moveY", myRb.velocity.y);
 
         if (movementX == 1 || movementX == -1 || movementY == 1 || movementY == -1)
         {
-            myAnim.SetFloat("lastMoveX", movementX);
-            myAnim.SetFloat("lastMoveY", movementY);
+            if (canMove)
+            {
+                myAnim.SetFloat("lastMoveX", movementX);
+                myAnim.SetFloat("lastMoveY", movementY);
+            }
         }
     }
 
@@ -57,11 +66,11 @@ public class Player : MonoBehaviour
     {
         Player.instance.transform.position = GameObject.Find(teleportPoint.spawnPointName).transform.position;
         UIFade.instance.FadeFromBlack();
-        x = movementSpeed;
+        canMove = true;
     }
 
     public void FreezeCharacter()
     {
-        x = 0f;
+        canMove = false;
     }
 }
