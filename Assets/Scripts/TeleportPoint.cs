@@ -36,8 +36,7 @@ public class TeleportPoint : MonoBehaviour
         {
             loadAfterFade = true;
             UIFade.instance.FadeToBlack();
-            Player.instance.FreezeCharacter();
+            GameManager.instance.fadingBetweenAreas = true;
         }
-        Debug.Log(sceneToLoad);
     }
 }

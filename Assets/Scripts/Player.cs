@@ -66,11 +66,6 @@ public class Player : MonoBehaviour
     {
         Player.instance.transform.position = GameObject.Find(teleportPoint.spawnPointName).transform.position;
         UIFade.instance.FadeFromBlack();
-        canMove = true;
-    }
-
-    public void FreezeCharacter()
-    {
-        canMove = false;
+        GameManager.instance.fadingBetweenAreas = false;
     }
 }
