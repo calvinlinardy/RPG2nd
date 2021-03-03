@@ -11,6 +11,7 @@ public class GameMenu : MonoBehaviour
     public Slider[] expSlider;
     public Image[] charImage;
     public GameObject[] charStatsHolder;
+    public GameObject[] windows;
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +26,9 @@ public class GameMenu : MonoBehaviour
         {
             if (theMenu.activeInHierarchy)
             {
-                theMenu.SetActive(false);
-                GameManager.instance.gameMenuOpen = false;
+                //theMenu.SetActive(false);
+                //GameManager.instance.gameMenuOpen = false;
+                CloseMenu();
             }
             else
             {
@@ -46,11 +48,44 @@ public class GameMenu : MonoBehaviour
             if (playerStats[i].gameObject.activeInHierarchy)
             {
                 charStatsHolder[i].SetActive(true);
+                nameText[i].text = playerStats[i].charName;
+                hpText[i].text = "HP: " + playerStats[i].currentHP + "/" + playerStats[i].maxHP;
+                mpText[i].text = "MP: " + playerStats[i].currentMP + "/" + playerStats[i].maxMP;
+                lvlText[i].text = "Lvl: " + playerStats[i].playerLevel;
+                expText[i].text = "" + playerStats[i].currentExp + "/" + playerStats[i].expToNextLevel[playerStats[i].playerLevel];
+                expSlider[i].maxValue = playerStats[i].expToNextLevel[playerStats[i].playerLevel];
+                expSlider[i].value = playerStats[i].currentExp;
+                charImage[i].sprite = playerStats[i].charImage;
             }
             else
             {
                 charStatsHolder[i].SetActive(false);
             }
         }
+    }
+
+    public void ToggleWindows(int windowsNumber)
+    {
+        for (int i = 0; i < windows.Length; i++)
+        {
+            if (i == windowsNumber)
+            {
+                windows[i].SetActive(!windows[i].activeInHierarchy);
+            }
+            else
+            {
+                windows[i].SetActive(false);
+            }
+        }
+    }
+
+    public void CloseMenu()
+    {
+        for (int i = 0; i < windows.Length; i++)
+        {
+            windows[i].SetActive(false);
+        }
+        theMenu.SetActive(false);
+        GameManager.instance.gameMenuOpen = false;
     }
 }
