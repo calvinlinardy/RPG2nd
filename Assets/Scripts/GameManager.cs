@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     public CharStats[] playerStats;
 
     public bool gameMenuOpen, dialogActive, fadingBetweenAreas;
+
+    public string[] itemHeld;
+    public int[] numberOfItem;
     // Start is called before the first frame update
     void Start()
     {
