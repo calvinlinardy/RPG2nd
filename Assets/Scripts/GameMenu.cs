@@ -12,7 +12,10 @@ public class GameMenu : MonoBehaviour
     public Image[] charImage;
     public GameObject[] charStatsHolder;
     public GameObject[] windows;
-
+    public GameObject[] statusButtons;
+    public Text statusName, statusHP, statusMP, statusStr, statusDef,
+    statusWpnEqpd, statusWpnPwr, statusAmrEqpd, statusAmrPwr, statusExp;
+    public Image statusImg;
     // Start is called before the first frame update
     void Start()
     {
@@ -66,6 +69,7 @@ public class GameMenu : MonoBehaviour
 
     public void ToggleWindows(int windowsNumber)
     {
+        UpdateMainStats();
         for (int i = 0; i < windows.Length; i++)
         {
             if (i == windowsNumber)
@@ -87,5 +91,38 @@ public class GameMenu : MonoBehaviour
         }
         theMenu.SetActive(false);
         GameManager.instance.gameMenuOpen = false;
+    }
+
+    public void OpenStatus()
+    {
+        UpdateMainStats();
+        StatusChar(0);
+        for (int i = 0; i < statusButtons.Length; i++)
+        {
+            statusButtons[i].SetActive(playerStats[i].gameObject.activeInHierarchy);
+            statusButtons[i].GetComponentInChildren<Text>().text = playerStats[i].charName;
+        }
+    }
+
+    public void StatusChar(int selected)
+    {
+        statusName.text = playerStats[selected].charName;
+        statusHP.text = "" + playerStats[selected].currentHP + "/" + playerStats[selected].maxHP;
+        statusMP.text = "" + playerStats[selected].currentMP + "/" + playerStats[selected].maxMP;
+        statusStr.text = playerStats[selected].strength.ToString();
+        statusDef.text = playerStats[selected].defence.ToString();
+        if (playerStats[selected].equippedWeapon != "")
+        {
+            statusWpnEqpd.text = playerStats[selected].equippedWeapon;
+        }
+        statusWpnPwr.text = playerStats[selected].weaponPower.ToString();
+        if (playerStats[selected].equippedArmor != "")
+        {
+            statusAmrEqpd.text = playerStats[selected].equippedArmor;
+        }
+        statusAmrPwr.text = playerStats[selected].armorPower.ToString();
+        statusExp.text = (playerStats[selected].expToNextLevel[playerStats[selected].playerLevel] -
+        playerStats[selected].currentExp).ToString();
+        statusImg.sprite = playerStats[selected].charImage;
     }
 }
