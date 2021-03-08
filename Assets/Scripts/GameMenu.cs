@@ -53,9 +53,12 @@ public class GameMenu : MonoBehaviour
             }
             else
             {
-                theMenu.SetActive(true);
-                UpdateMainStats();
-                GameManager.instance.gameMenuOpen = true;
+                if (!Shop.instance.shopMenu.activeInHierarchy)
+                {
+                    theMenu.SetActive(true);
+                    UpdateMainStats();
+                    GameManager.instance.gameMenuOpen = true;
+                }
             }
         }
     }
