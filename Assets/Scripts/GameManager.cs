@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -49,6 +50,18 @@ public class GameManager : MonoBehaviour
 
             RemoveItem("Leather Armor");
             RemoveItem("Blublu");
+        }
+
+        if (Input.GetKeyDown(KeyCode.O)) // TEMPORARY
+        {
+            SaveData();
+            Debug.Log("Game Saved.");
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            LoadData();
+            Debug.Log("Game Loaded.");
         }
     }
 
@@ -159,6 +172,83 @@ public class GameManager : MonoBehaviour
         else
         {
             Debug.LogError("Couldn't find " + itemToRemove);
+        }
+    }
+
+    public void SaveData()
+    {
+        PlayerPrefs.SetString("Current_Scene", SceneManager.GetActiveScene().name);
+        PlayerPrefs.SetFloat("Player_Position_x", Player.instance.transform.position.x);
+        PlayerPrefs.SetFloat("Player_Position_y", Player.instance.transform.position.y);
+
+        //Save CharInfo
+        for (int i = 0; i < playerStats.Length; i++)
+        {
+            if (playerStats[i].gameObject.activeInHierarchy)
+            {
+                PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_active", 1);
+            }
+            else
+            {
+                PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_active", 0);
+            }
+
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_Level", playerStats[i].playerLevel);
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_CurrentExp", playerStats[i].currentExp);
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_CurrentHP", playerStats[i].currentHP);
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_MaxHP", playerStats[i].maxHP);
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_CurrentMP", playerStats[i].currentMP);
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_MaxMP", playerStats[i].maxMP);
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_Strength", playerStats[i].strength);
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_Defence", playerStats[i].defence);
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_WpnPwr", playerStats[i].weaponPower);
+            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_AmrPwr", playerStats[i].armorPower);
+            PlayerPrefs.SetString("Player_" + playerStats[i].charName + "_EquippedWpn", playerStats[i].equippedWeapon);
+            PlayerPrefs.SetString("Player_" + playerStats[i].charName + "_EquippedAmr", playerStats[i].equippedArmor);
+        }
+
+        //store inventory data (items)
+        for (int i = 0; i < itemsHeld.Length; i++)
+        {
+            PlayerPrefs.SetString("ItemInInventory_" + i, itemsHeld[i]);
+            PlayerPrefs.SetInt("ItemAmount_" + i, numberOfItem[i]);
+        }
+    }
+
+    public void LoadData()
+    {
+        Player.instance.transform.position = new Vector3(PlayerPrefs.GetFloat("Player_Position_x"),
+        PlayerPrefs.GetFloat("Player_Position_y"));
+
+        for (int i = 0; i < playerStats.Length; i++)
+        {
+            if (PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_active") == 0)
+            {
+                playerStats[i].gameObject.SetActive(false);
+            }
+            else
+            {
+                playerStats[i].gameObject.SetActive(true);
+            }
+
+            playerStats[i].playerLevel = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_Level");
+            playerStats[i].currentExp = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_CurrentExp");
+            playerStats[i].currentHP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_CurrentHP");
+            playerStats[i].maxHP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_MaxHP");
+            playerStats[i].currentMP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_CurrentMP");
+            playerStats[i].maxMP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_MaxMP");
+            playerStats[i].strength = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_Strength");
+            playerStats[i].defence = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_Defence");
+            playerStats[i].weaponPower = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_WpnPwr");
+            playerStats[i].armorPower = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_AmrPwr");
+            playerStats[i].equippedWeapon = PlayerPrefs.GetString("Player_" + playerStats[i].charName + "_EquippedWpn");
+            playerStats[i].equippedArmor = PlayerPrefs.GetString("Player_" + playerStats[i].charName + "_EquippedAmr");
+        }
+
+        for (int i = 0; i < itemsHeld.Length; i++)
+        {
+            itemsHeld[i] = PlayerPrefs.GetString("ItemInInventory_" + i);
+            numberOfItem[i] = PlayerPrefs.GetInt("ItemAmount_" + i);
         }
     }
 }
