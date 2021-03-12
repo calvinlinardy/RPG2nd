@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 1018844384674079341}
   - component: {fileID: 1018844384674079340}
   - component: {fileID: 1018844384674079315}
+  - component: {fileID: 1018844383802102478}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -114,6 +115,7 @@ MonoBehaviour:
   gameMenuOpen: 0
   dialogActive: 0
   fadingBetweenAreas: 0
+  shopActive: 0
   itemsHeld:
   - 
   - 
@@ -153,7 +155,7 @@ MonoBehaviour:
   - {fileID: 6152929901747559613, guid: d0d036bec35b3e148a3417bc9db69aa2, type: 3}
   - {fileID: 8721453965968573648, guid: 3796a76ccfcb6bc439aa13d29a061ef1, type: 3}
   - {fileID: 8499625800981287498, guid: 78040ae1ef65def4aab03b19fa067e3c, type: 3}
-  currentGold: 0
+  currentGold: 1000
 --- !u!114 &1018844384674079315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,6 +168,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75071bde88531b9408c25415aa18273d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1018844383802102478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018844384674079314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cede945a1e3dc764d9d02dcac8b371fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questMarkerNames:
+  - 
+  - Enter the cave
+  - Quest test
+  - Fight the dragon
+  - Save the world
+  questMarkersComplete: 0000000000
 --- !u!1 &1018844384741955388
 GameObject:
   m_ObjectHideFlags: 0
