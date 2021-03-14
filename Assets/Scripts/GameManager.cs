@@ -8,11 +8,12 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public CharStats[] playerStats;
 
-    public bool gameMenuOpen, dialogActive, fadingBetweenAreas, shopActive;
+    public bool gameMenuOpen, dialogActive, fadingBetweenAreas, shopActive, battleActive;
 
     public string[] itemsHeld;
     public int[] numberOfItem;
     public Item[] referenceItems;
+    public bool loadFromMainMenu = false;
 
     public int currentGold;
     // Start is called before the first frame update
@@ -33,7 +34,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameMenuOpen || dialogActive || fadingBetweenAreas || shopActive)
+        if (gameMenuOpen || dialogActive || fadingBetweenAreas || shopActive || battleActive)
         {
             Player.instance.canMove = false;
         }
@@ -64,11 +65,14 @@ public class GameManager : MonoBehaviour
             Debug.Log("Game Loaded.");
         }
 
-        if (MainMenu.instance.hasToLoadScene)
+        if (loadFromMainMenu)
         {
-            LoadData();
-            QuestManager.instance.LoadQuestData();
-            MainMenu.instance.hasToLoadScene = false;
+            if (MainMenu.instance.hasToLoadScene)
+            {
+                LoadData();
+                QuestManager.instance.LoadQuestData();
+                MainMenu.instance.hasToLoadScene = false;
+            }
         }
     }
 

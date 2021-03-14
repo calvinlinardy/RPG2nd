@@ -35,6 +35,7 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(PlayerPrefs.GetString("Current_Scene"));
         hasToLoadScene = true;
+        GameManager.instance.loadFromMainMenu = true;
     }
 
     public void NewGame()

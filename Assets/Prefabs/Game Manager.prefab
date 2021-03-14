@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62dbfdb4f00d542458a2a4c7fa4f27ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charName: CLC
+  charName: Calvin
   playerLevel: 1
   currentExp: 0
   expToNextLevel: 
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 1018844384674079315}
   - component: {fileID: 1018844383802102478}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: Game Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,6 +116,7 @@ MonoBehaviour:
   dialogActive: 0
   fadingBetweenAreas: 0
   shopActive: 0
+  battleActive: 0
   itemsHeld:
   - 
   - 
@@ -155,6 +156,7 @@ MonoBehaviour:
   - {fileID: 6152929901747559613, guid: d0d036bec35b3e148a3417bc9db69aa2, type: 3}
   - {fileID: 8721453965968573648, guid: 3796a76ccfcb6bc439aa13d29a061ef1, type: 3}
   - {fileID: 8499625800981287498, guid: 78040ae1ef65def4aab03b19fa067e3c, type: 3}
+  loadFromMainMenu: 0
   currentGold: 1000
 --- !u!114 &1018844384674079315
 MonoBehaviour:
@@ -230,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62dbfdb4f00d542458a2a4c7fa4f27ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charName: Dalmi
+  charName: Joy
   playerLevel: 1
   currentExp: 0
   expToNextLevel: 
