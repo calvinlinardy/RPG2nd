@@ -63,6 +63,13 @@ public class GameManager : MonoBehaviour
             LoadData();
             Debug.Log("Game Loaded.");
         }
+
+        if (MainMenu.instance.hasToLoadScene)
+        {
+            LoadData();
+            QuestManager.instance.LoadQuestData();
+            MainMenu.instance.hasToLoadScene = false;
+        }
     }
 
     public Item GetItemDetails(string itemToGrab)
