@@ -114,5 +114,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1487061cc3bd5e4a9142769180cc760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectLength: 3
+  effectLength: 1
   sFx: 4
