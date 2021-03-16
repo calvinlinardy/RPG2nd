@@ -51,13 +51,13 @@ MonoBehaviour:
   baseExp: 1000
   currentHP: 50
   maxHP: 200
-  currentMP: 0
-  maxMP: 50
+  currentMP: 150
+  maxMP: 150
   mpLvlBonus: 
   strength: 0
-  defence: 0
+  defence: 10
   weaponPower: 0
-  armorPower: 0
+  armorPower: 12
   equippedWeapon: 
   equippedArmor: 
   charImage: {fileID: 7152930139536384079, guid: 4bd66a3f98e7e064c92a6cdabc40ce0e,
@@ -205,7 +205,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1018844384741955389
 Transform:
   m_ObjectHideFlags: 0
@@ -240,13 +240,13 @@ MonoBehaviour:
   baseExp: 1000
   currentHP: 50
   maxHP: 200
-  currentMP: 0
-  maxMP: 50
+  currentMP: 100
+  maxMP: 100
   mpLvlBonus: 
   strength: 0
-  defence: 0
+  defence: 11
   weaponPower: 0
-  armorPower: 0
+  armorPower: 14
   equippedWeapon: 
   equippedArmor: 
   charImage: {fileID: 21300000, guid: fb8cc55af4b7a034584793949fd90500, type: 3}
