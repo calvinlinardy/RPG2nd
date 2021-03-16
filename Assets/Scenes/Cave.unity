@@ -6707,16 +6707,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1018844384087159770, guid: 5b2cc30df401fcc4681fa3870274f210,
-        type: 3}
-      propertyPath: defence
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1018844384087159770, guid: 5b2cc30df401fcc4681fa3870274f210,
-        type: 3}
-      propertyPath: armorPower
-      value: 12
-      objectReference: {fileID: 0}
     - target: {fileID: 1018844384674079314, guid: 5b2cc30df401fcc4681fa3870274f210,
         type: 3}
       propertyPath: m_Name
@@ -6776,21 +6766,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1018844384741955388, guid: 5b2cc30df401fcc4681fa3870274f210,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1018844384741955390, guid: 5b2cc30df401fcc4681fa3870274f210,
-        type: 3}
-      propertyPath: defence
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1018844384741955390, guid: 5b2cc30df401fcc4681fa3870274f210,
-        type: 3}
-      propertyPath: armorPower
-      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2cc30df401fcc4681fa3870274f210, type: 3}
