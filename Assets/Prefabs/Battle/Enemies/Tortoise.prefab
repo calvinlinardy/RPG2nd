@@ -45,7 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Ice
+  - Plasma
   charName: Tortoise
   currentHp: 350
   maxHp: 400

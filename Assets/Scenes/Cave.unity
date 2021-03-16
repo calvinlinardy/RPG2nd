@@ -416,8 +416,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98267791}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.51, y: -5, z: -1.2382812}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.39, y: -13.805664, z: -9.29834}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 597348319}
@@ -454,6 +454,30 @@ MonoBehaviour:
   - {fileID: 8980640331486807193, guid: 33588501f499da342bc120c4ad727d57, type: 3}
   - {fileID: 376303767376635561, guid: de140e5d738137b4ab04e78fd719b7a9, type: 3}
   activeBattlers: []
+  currentTurn: 0
+  turnWaiting: 0
+  uiButtonsHolder: {fileID: 330904398}
+  movesList:
+  - moveName: Slash
+    movePower: 30
+    moveCost: 0
+    theEffect: {fileID: 8470409314969480629, guid: 137c86b5bbdfddf48a9f4b8ea75c96e3,
+      type: 3}
+  - moveName: Fire
+    movePower: 50
+    moveCost: 5
+    theEffect: {fileID: 8459208274077298299, guid: 92561c3f6c7794045ad213ebbeaa5ae3,
+      type: 3}
+  - moveName: Ice
+    movePower: 65
+    moveCost: 7
+    theEffect: {fileID: 3161447519003037143, guid: e95b347e9dd322744b3d3094e2729347,
+      type: 3}
+  - moveName: Plasma
+    movePower: 85
+    moveCost: 12
+    theEffect: {fileID: 6122406560844525540, guid: f3ed87d3c72deac458059a8df959dd4a,
+      type: 3}
 --- !u!1001 &192814702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2255,6 +2279,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1018844384087159770, guid: 5b2cc30df401fcc4681fa3870274f210,
+        type: 3}
+      propertyPath: defence
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1018844384087159770, guid: 5b2cc30df401fcc4681fa3870274f210,
+        type: 3}
+      propertyPath: armorPower
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1018844384674079314, guid: 5b2cc30df401fcc4681fa3870274f210,
         type: 3}
       propertyPath: m_Name
@@ -2319,6 +2353,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1018844384741955390, guid: 5b2cc30df401fcc4681fa3870274f210,
+        type: 3}
+      propertyPath: defence
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1018844384741955390, guid: 5b2cc30df401fcc4681fa3870274f210,
+        type: 3}
+      propertyPath: armorPower
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2cc30df401fcc4681fa3870274f210, type: 3}
