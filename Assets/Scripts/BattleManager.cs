@@ -34,6 +34,10 @@ public class BattleManager : MonoBehaviour
     public GameObject magicMenu;
     public BattleMagicSelect[] magicButtons;
 
+    public BattleNotification battleNotice;
+
+    public int chanceToFlee = 35;
+
     void Start()
     {
         instance = this;
@@ -363,6 +367,23 @@ public class BattleManager : MonoBehaviour
             {
                 magicButtons[i].gameObject.SetActive(false);
             }
+        }
+    }
+
+    public void Flee()
+    {
+        int fleeSuccess = Random.Range(0, 100);
+        if (fleeSuccess < chanceToFlee)
+        {
+            //end battlenya
+            battleActive = false;
+            battleScene.SetActive(false);
+        }
+        else
+        {
+            NextTurn();
+            battleNotice.theText.text = "Couldn't escape!";
+            battleNotice.Activate();
         }
     }
 }
