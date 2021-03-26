@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public int[] numberOfItem;
     public Item[] referenceItems;
     public bool loadFromMainMenu = false;
+    public bool hasGameMenu = false;
 
     public int currentGold;
     // Start is called before the first frame update
@@ -28,6 +29,12 @@ public class GameManager : MonoBehaviour
         if (gameManagerCount > 1)
         {
             Destroy(gameObject);
+        }
+
+        int gameMenuCount = FindObjectsOfType<GameMenu>().Length;
+        if (gameMenuCount > 0)
+        {
+            hasGameMenu = true;
         }
     }
 
@@ -178,7 +185,14 @@ public class GameManager : MonoBehaviour
             {
                 itemsHeld[itemPosition] = "";
             }
-            GameMenu.instance.ShowItems();
+            if (hasGameMenu)
+            {
+                GameMenu.instance.ShowItems();
+            }
+            else
+            {
+                BattleManager.instance.ShowItem();
+            }
         }
         else
         {
