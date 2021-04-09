@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BattleManager : MonoBehaviour
 {
@@ -44,6 +45,12 @@ public class BattleManager : MonoBehaviour
     public Text[] itemCharChoiceNames;
     public CharStats[] playerStats;
     public int chanceToFlee = 35;
+
+    public string gameOverScene;
+
+    public GameObject theCamera;
+
+    private bool itemShown = false;
 
 
     void Start()
@@ -206,6 +213,8 @@ public class BattleManager : MonoBehaviour
             else
             {
                 //game over
+                //Application.Quit();
+                Debug.Log("Quit Game");
             }
             /*
             battleScene.SetActive(false);
@@ -410,23 +419,32 @@ public class BattleManager : MonoBehaviour
 
     public void ShowItem()
     {
-        itemMenu.SetActive(true);
-        GameManager.instance.SortItems();
-
-        for (int i = 0; i < itemButtons.Length; i++)
+        if (itemShown == false)
         {
-            itemButtons[i].buttonValue = i;
-            if (GameManager.instance.itemsHeld[i] != "")
+            itemShown = true;
+            itemMenu.SetActive(true);
+            GameManager.instance.SortItems();
+
+            for (int i = 0; i < itemButtons.Length; i++)
             {
-                itemButtons[i].buttonImage.gameObject.SetActive(true);
-                itemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[i]).itemSprite;
-                itemButtons[i].amountText.text = GameManager.instance.numberOfItem[i].ToString();
+                itemButtons[i].buttonValue = i;
+                if (GameManager.instance.itemsHeld[i] != "")
+                {
+                    itemButtons[i].buttonImage.gameObject.SetActive(true);
+                    itemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[i]).itemSprite;
+                    itemButtons[i].amountText.text = GameManager.instance.numberOfItem[i].ToString();
+                }
+                else
+                {
+                    itemButtons[i].buttonImage.gameObject.SetActive(false);
+                    itemButtons[i].amountText.text = "";
+                }
             }
-            else
-            {
-                itemButtons[i].buttonImage.gameObject.SetActive(false);
-                itemButtons[i].amountText.text = "";
-            }
+        }
+        else
+        {
+            itemMenu.SetActive(false);
+            itemShown = false;
         }
     }
 
@@ -509,5 +527,23 @@ public class BattleManager : MonoBehaviour
         GameManager.instance.battleActive = false;
 
         AudioManager.instance.PlayBGM(3);
+    }
+
+    public IEnumerator GameOverCo()
+    {
+        battleActive = false;
+        UIFade.instance.FadeToBlack();
+        yield return new WaitForSeconds(1.5f);
+        battleScene.SetActive(false);
+
+        Destroy(GameManager.instance.gameObject);
+        Destroy(Player.instance.gameObject);
+        //Destroy(GameMenu.instance.gameObject);
+        Destroy(AudioManager.instance.gameObject);
+        Destroy(BattleManager.instance.gameObject);
+        Destroy(theCamera.gameObject);
+
+        SceneManager.LoadScene("Main Menu");
+        UIFade.instance.FadeFromBlack();
     }
 }
