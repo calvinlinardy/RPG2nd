@@ -8,7 +8,7 @@ public class BattleManager : MonoBehaviour
 {
     public static BattleManager instance;
     // Start is called before the first frame update
-    private bool battleActive;
+    public bool battleActive;
     public GameObject battleScene;
     public Transform[] playerPos;
     public Transform[] enemyPos;
@@ -64,7 +64,7 @@ public class BattleManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            BattleStart(new string[] { "Tortoise", "Zomb", "Slime" }); //sementara
+            BattleStart(new string[] { "Slime" }); //sementara
         }
 
         if (battleActive)
@@ -163,6 +163,7 @@ public class BattleManager : MonoBehaviour
         turnWaiting = true;
         UpdateBattle();
         UpdateUIStats();
+        UpdateStatsToGM();
     }
 
     public void UpdateBattle()
@@ -483,10 +484,50 @@ public class BattleManager : MonoBehaviour
     public void Useitem(int selectChar)
     {
         activeItem.Use(selectChar);
+        UpdateStatsFromGM(selectChar);
         UpdateUIStats();
         CloseItemCharChoice();
         itemMenu.SetActive(false);
         NextTurn();
+    }
+
+    public void UpdateStatsFromGM(int selectChar)
+    {
+        if (activeBattlers[selectChar].isPlayer)
+        {
+            activeBattlers[selectChar].currentHp = GameManager.instance.playerStats[selectChar].currentHP;
+            activeBattlers[selectChar].currentMP = GameManager.instance.playerStats[selectChar].currentMP;
+            activeBattlers[selectChar].maxHp = GameManager.instance.playerStats[selectChar].maxHP;
+            activeBattlers[selectChar].maxMP = GameManager.instance.playerStats[selectChar].maxMP;
+            activeBattlers[selectChar].strength = GameManager.instance.playerStats[selectChar].strength;
+            activeBattlers[selectChar].defence = GameManager.instance.playerStats[selectChar].defence;
+            activeBattlers[selectChar].weaponPower = GameManager.instance.playerStats[selectChar].weaponPower;
+            activeBattlers[selectChar].armorPower = GameManager.instance.playerStats[selectChar].armorPower;
+        }
+    }
+
+    public void UpdateStatsToGM()
+    {
+        for (int i = 0; i < activeBattlers.Count; i++)
+        {
+            if (activeBattlers[i].isPlayer)
+            {
+                for (int j = 0; j < GameManager.instance.playerStats.Length; j++)
+                {
+                    if (activeBattlers[i].charName == GameManager.instance.playerStats[j].charName)
+                    {
+                        GameManager.instance.playerStats[j].currentHP = activeBattlers[i].currentHp;
+                        GameManager.instance.playerStats[j].currentMP = activeBattlers[i].currentMP;
+                        GameManager.instance.playerStats[j].maxHP = activeBattlers[i].maxHp;
+                        GameManager.instance.playerStats[j].maxMP = activeBattlers[i].maxMP;
+                        GameManager.instance.playerStats[j].strength = activeBattlers[i].strength;
+                        GameManager.instance.playerStats[j].defence = activeBattlers[i].defence;
+                        GameManager.instance.playerStats[j].weaponPower = activeBattlers[i].weaponPower;
+                        GameManager.instance.playerStats[j].armorPower = activeBattlers[i].armorPower;
+                    }
+                }
+            }
+        }
     }
 
     public IEnumerator EndBattleCo()
@@ -513,6 +554,12 @@ public class BattleManager : MonoBehaviour
                     {
                         GameManager.instance.playerStats[j].currentHP = activeBattlers[i].currentHp;
                         GameManager.instance.playerStats[j].currentMP = activeBattlers[i].currentMP;
+                        GameManager.instance.playerStats[j].maxHP = activeBattlers[i].maxHp;
+                        GameManager.instance.playerStats[j].maxMP = activeBattlers[i].maxMP;
+                        GameManager.instance.playerStats[j].strength = activeBattlers[i].strength;
+                        GameManager.instance.playerStats[j].defence = activeBattlers[i].defence;
+                        GameManager.instance.playerStats[j].weaponPower = activeBattlers[i].weaponPower;
+                        GameManager.instance.playerStats[j].armorPower = activeBattlers[i].armorPower;
                     }
                 }
             }
