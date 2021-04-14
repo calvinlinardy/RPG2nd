@@ -54,6 +54,7 @@ public class BattleManager : MonoBehaviour
     private bool fleeing;
     public int rewardEXP;
     public string[] rewardItems;
+    public bool cannotFlee;
 
     void Start()
     {
@@ -66,7 +67,7 @@ public class BattleManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            BattleStart(new string[] { "Slime" }); //sementara
+            BattleStart(new string[] { "Slime" }, false); //sementara
         }
 
         if (battleActive)
@@ -92,10 +93,12 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    public void BattleStart(string[] enemiesToSpawn)
+    public void BattleStart(string[] enemiesToSpawn, bool setCannotFlee)
     {
         if (!battleActive)
         {
+            cannotFlee = setCannotFlee;
+
             battleActive = true;
             GameManager.instance.battleActive = true;
 
@@ -403,21 +406,29 @@ public class BattleManager : MonoBehaviour
 
     public void Flee()
     {
-        int fleeSuccess = Random.Range(0, 100);
-        if (fleeSuccess < chanceToFlee)
+        if (cannotFlee)
         {
-            //end battlenya
-            /*
-            battleActive = false;
-            battleScene.SetActive(false);*/
-            fleeing = true;
-            StartCoroutine(EndBattleCo());
+            battleNotice.theText.text = "Cannot flee this battle!";
+            battleNotice.Activate();
         }
         else
         {
-            NextTurn();
-            battleNotice.theText.text = "Couldn't escape!";
-            battleNotice.Activate();
+            int fleeSuccess = Random.Range(0, 100);
+            if (fleeSuccess < chanceToFlee)
+            {
+                //end battlenya
+                /*
+                battleActive = false;
+                battleScene.SetActive(false);*/
+                fleeing = true;
+                StartCoroutine(EndBattleCo());
+            }
+            else
+            {
+                NextTurn();
+                battleNotice.theText.text = "Couldn't escape!";
+                battleNotice.Activate();
+            }
         }
     }
 

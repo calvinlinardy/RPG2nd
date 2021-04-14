@@ -6410,8 +6410,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -116}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -170.9}
+  m_SizeDelta: {x: 0, y: 109.798584}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &321442270
 CanvasRenderer:
@@ -6453,7 +6453,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2x Health Potion
+  m_Text: '2x Health Potion
+
+    asdf
+
+    asdf
+
+    asdf'
 --- !u!1 &323527722
 GameObject:
   m_ObjectHideFlags: 0
@@ -6921,7 +6927,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &349088466
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7331,7 +7337,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -119}
+  m_AnchoredPosition: {x: 0, y: -90}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &370769804
@@ -20185,7 +20191,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 58}
+  m_AnchoredPosition: {x: 0, y: 141}
   m_SizeDelta: {x: -827.95935, y: -741.42834}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1188107560

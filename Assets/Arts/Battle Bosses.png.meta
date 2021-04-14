@@ -44,6 +44,9 @@ TextureImporter:
       213: 21300020
     second: DAGRONS5 - Credit to Stephen 'Redshrike' Challener, MrBeast, Surt, Blarumyrran,
       Sharm, Zabin_10
+  - first:
+      213: -6462677450277963987
+    second: Demon Dragon
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -166,6 +169,27 @@ TextureImporter:
       bones: []
       spriteID: 8a725359d537ea344b37d82bdc6fd30b
       internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Demon Dragon
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 164
+        width: 173
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2731468915ff46a0800000000000000
+      internalID: -6462677450277963987
       vertices: []
       indices: 
       edges: []
