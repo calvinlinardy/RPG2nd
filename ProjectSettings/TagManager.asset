@@ -50,3 +50,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Battle Background
+    uniqueID: 3608033669
+    locked: 0
+  - name: Battle Chars
+    uniqueID: 1584734319
+    locked: 0

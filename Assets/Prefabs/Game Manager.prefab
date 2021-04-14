@@ -43,21 +43,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62dbfdb4f00d542458a2a4c7fa4f27ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charName: CLC
+  charName: Calvin
   playerLevel: 1
   currentExp: 0
   expToNextLevel: 
   maxLevel: 100
   baseExp: 1000
-  currentHP: 50
-  maxHP: 200
-  currentMP: 0
-  maxMP: 50
-  mpLvlBonus: 
-  strength: 0
-  defence: 0
+  currentHP: 500
+  maxHP: 1000
+  currentMP: 500
+  maxMP: 1000
+  mpLvlBonus: 000000000000000000000000000000000a00000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000000000000012000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002d000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003c00000000000000
+  strength: 100
+  defence: 10
   weaponPower: 0
-  armorPower: 0
+  armorPower: 12
   equippedWeapon: 
   equippedArmor: 
   charImage: {fileID: 7152930139536384079, guid: 4bd66a3f98e7e064c92a6cdabc40ce0e,
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 1018844384674079315}
   - component: {fileID: 1018844383802102478}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: Game Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,6 +116,7 @@ MonoBehaviour:
   dialogActive: 0
   fadingBetweenAreas: 0
   shopActive: 0
+  battleActive: 0
   itemsHeld:
   - 
   - 
@@ -155,6 +156,8 @@ MonoBehaviour:
   - {fileID: 6152929901747559613, guid: d0d036bec35b3e148a3417bc9db69aa2, type: 3}
   - {fileID: 8721453965968573648, guid: 3796a76ccfcb6bc439aa13d29a061ef1, type: 3}
   - {fileID: 8499625800981287498, guid: 78040ae1ef65def4aab03b19fa067e3c, type: 3}
+  loadFromMainMenu: 0
+  hasGameMenu: 0
   currentGold: 1000
 --- !u!114 &1018844384674079315
 MonoBehaviour:
@@ -203,7 +206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1018844384741955389
 Transform:
   m_ObjectHideFlags: 0
@@ -230,21 +233,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62dbfdb4f00d542458a2a4c7fa4f27ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charName: Dalmi
+  charName: Joy
   playerLevel: 1
   currentExp: 0
   expToNextLevel: 
   maxLevel: 100
   baseExp: 1000
-  currentHP: 50
-  maxHP: 200
-  currentMP: 0
-  maxMP: 50
+  currentHP: 500
+  maxHP: 1000
+  currentMP: 500
+  maxMP: 1000
   mpLvlBonus: 
-  strength: 0
-  defence: 0
+  strength: 200
+  defence: 11
   weaponPower: 0
-  armorPower: 0
+  armorPower: 14
   equippedWeapon: 
   equippedArmor: 
   charImage: {fileID: 21300000, guid: fb8cc55af4b7a034584793949fd90500, type: 3}

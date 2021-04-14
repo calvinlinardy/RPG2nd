@@ -5,16 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Country1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Country2.unity
-    guid: f095229afdf7f2640833aa27904e2077
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Countryside.unity
     guid: fbff4d5c333cf32439838d5f72e9ed5b
   - enabled: 1
     path: Assets/Scenes/Town.unity
     guid: 994540cd16c30854c81274bde76037cc
+  - enabled: 1
+    path: Assets/Scenes/Cave.unity
+    guid: 68fe9379b4d82f743af53bbf329b3cf8
+  - enabled: 1
+    path: Assets/Scenes/Game Over.unity
+    guid: 96d74fbffe9758d4a8b84023775ae0f2
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: e6552a09dd94c054f8e858d4652232ed
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: 79ea505e01ff46d4ab8268cc3f9db1f8
   m_configObjects: {}

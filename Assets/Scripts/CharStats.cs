@@ -38,6 +38,7 @@ public class CharStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        UpdateExp();
         if (Input.GetKeyDown(KeyCode.K))
         {
             AddExp(500);
@@ -50,31 +51,36 @@ public class CharStats : MonoBehaviour
 
         if (playerLevel < maxLevel)
         {
-            if (currentExp > expToNextLevel[playerLevel])
-            {
-                currentExp -= expToNextLevel[playerLevel];
-                playerLevel++;
-
-                //tentuin tambahin str atau def berdasarkan ganjil dan genap
-                if (playerLevel % 2 == 0)
-                {
-                    strength++;
-                }
-                else
-                {
-                    defence++;
-                }
-
-                maxHP = Mathf.FloorToInt(maxHP * 1.05f);
-                currentHP = maxHP;
-
-                maxMP += mpLvlBonus[playerLevel];
-                currentMP = maxMP;
-            }
+            UpdateExp();
         }
         if (playerLevel >= maxLevel)
         {
             currentExp = 0;
+        }
+    }
+
+    public void UpdateExp()
+    {
+        if (currentExp > expToNextLevel[playerLevel])
+        {
+            currentExp -= expToNextLevel[playerLevel];
+            playerLevel++;
+
+            //tentuin tambahin str atau def berdasarkan ganjil dan genap
+            if (playerLevel % 2 == 0)
+            {
+                strength++;
+            }
+            else
+            {
+                defence++;
+            }
+
+            maxHP = Mathf.FloorToInt(maxHP * 1.05f);
+            currentHP = maxHP;
+
+            maxMP += mpLvlBonus[playerLevel];
+            currentMP = maxMP;
         }
     }
 }
