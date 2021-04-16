@@ -67,7 +67,7 @@ public class BattleManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            BattleStart(new string[] { "Slime" }, false); //sementara
+            BattleStart(new string[] { "Blue Slime" }, false); //sementara
         }
 
         if (battleActive)
@@ -183,12 +183,13 @@ public class BattleManager : MonoBehaviour
                 activeBattlers[i].currentHp = 0;
             }
 
-            if (activeBattlers[i].currentHp == 0)
+            if (activeBattlers[i].currentHp <= 0)
             {
                 //handle dead battler
                 if (activeBattlers[i].isPlayer)
                 {
-                    activeBattlers[i].theSprite.sprite = activeBattlers[i].deadSprite;
+                    //activeBattlers[i].theSprite.sprite = activeBattlers[i].deadSprite;
+                    activeBattlers[i].SetDieAnimation();
                 }
                 else
                 {
@@ -200,7 +201,7 @@ public class BattleManager : MonoBehaviour
                 if (activeBattlers[i].isPlayer)
                 {
                     allPlayersDead = false;
-                    activeBattlers[i].theSprite.sprite = activeBattlers[i].aliveSprite;
+                    //activeBattlers[i].theSprite.sprite = activeBattlers[i].aliveSprite;
                 }
                 else
                 {

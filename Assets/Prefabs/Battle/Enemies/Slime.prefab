@@ -46,13 +46,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 0
   movesAvailable:
-  - Slash
+  - Boom
   charName: Slime
-  currentHp: 150
-  maxHp: 250
+  currentHp: 99999
+  maxHp: 99999
   currentMP: 0
   maxMP: 0
-  strength: 5
+  strength: 100
   defence: 5
   weaponPower: 5
   armorPower: 5
