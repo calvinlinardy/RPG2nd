@@ -61,7 +61,7 @@ public class GameMenu : MonoBehaviour
                 }
             }
 
-            AudioManager.instance.PlaySFX(5);
+            AudioManager.instance.PlaySFX(11);
         }
     }
 
@@ -230,8 +230,8 @@ public class GameMenu : MonoBehaviour
         QuestManager.instance.SaveQuestData();
     }
 
-    public void PlayButtonSound()
+    public void PlayButtonSound(int SFx)
     {
-        AudioManager.instance.PlaySFX(4);
+        AudioManager.instance.PlaySFX(SFx);
     }
 }

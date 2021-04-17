@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effectLength: 1.2
-  sFx: 5
+  sFx: 10
 --- !u!95 &2423322474322781101
 Animator:
   serializedVersion: 3

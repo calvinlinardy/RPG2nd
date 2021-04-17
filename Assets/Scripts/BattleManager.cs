@@ -67,7 +67,7 @@ public class BattleManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            BattleStart(new string[] { "Blue Slime" }, false); //sementara
+            BattleStart(new string[] { "Umbicorn" }, false); //sementara
         }
 
         if (battleActive)
@@ -106,7 +106,7 @@ public class BattleManager : MonoBehaviour
             Camera.main.transform.position.y, transform.position.z); //buat bikin BG ngikutin camera
             battleScene.SetActive(true);
 
-            AudioManager.instance.PlayBGM(0);
+            AudioManager.instance.PlayBGM(3);
 
             for (int i = 0; i < playerPos.Length; i++)
             {
@@ -519,6 +519,11 @@ public class BattleManager : MonoBehaviour
             activeBattlers[selectChar].weaponPower = GameManager.instance.playerStats[selectChar].weaponPower;
             activeBattlers[selectChar].armorPower = GameManager.instance.playerStats[selectChar].armorPower;
         }
+    }
+
+    public void PlayButtonSound(int SFx)
+    {
+        AudioManager.instance.PlaySFX(SFx);
     }
 
     public void UpdateStatsToGM()

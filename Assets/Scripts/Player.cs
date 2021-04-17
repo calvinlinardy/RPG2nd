@@ -14,7 +14,6 @@ public class Player : MonoBehaviour
     Rigidbody2D myRb;
     Animator myAnim;
     TeleportPoint teleportPoint;
-
     public static Player instance;
 
     void Start()
