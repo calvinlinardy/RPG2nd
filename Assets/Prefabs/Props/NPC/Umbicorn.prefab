@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 2307091880578740056}
   - component: {fileID: 4656572885079756684}
   m_Layer: 0
-  m_Name: umbicorn_0
+  m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

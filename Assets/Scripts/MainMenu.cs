@@ -48,4 +48,9 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
         Debug.Log("Quit Game.");
     }
+
+    public void PlayButtonSound(int SFx)
+    {
+        AudioManager.instance.PlaySFX(SFx);
+    }
 }

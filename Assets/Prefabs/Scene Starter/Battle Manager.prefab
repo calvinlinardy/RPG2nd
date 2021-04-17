@@ -3273,14 +3273,19 @@ MonoBehaviour:
   - {fileID: 5693268178992714427, guid: f5dfa86f71023bb4bbee5142c7f3f9fc, type: 3}
   - {fileID: 6417356971478371622, guid: 71ad243183fd1b14bae853f0ac9f3f65, type: 3}
   enemyPrefabs:
-  - {fileID: 3011699024481380287, guid: 9bdd72768d6d58c44800dbfb74987778, type: 3}
-  - {fileID: 8980640331486807193, guid: 33588501f499da342bc120c4ad727d57, type: 3}
-  - {fileID: 376303767376635561, guid: de140e5d738137b4ab04e78fd719b7a9, type: 3}
-  - {fileID: 1410503434662646447, guid: dace785adf4a2994dbfca5a6ac6b4989, type: 3}
   - {fileID: 6136776851093919488, guid: 9e1a8cf9779f79246a657ac936497dcb, type: 3}
+  - {fileID: 5805864926515596953, guid: 27269eea3460d0f4f8b2bc0e25ef70cd, type: 3}
+  - {fileID: 1410503434662646447, guid: dace785adf4a2994dbfca5a6ac6b4989, type: 3}
   - {fileID: 7156845132779668381, guid: b0826310bda81bb44a8429a5d455ea44, type: 3}
-  - {fileID: 6258240747755526628, guid: de59677c2b9834b4faaae2c34caa7aed, type: 3}
   - {fileID: 883867272694215730, guid: 6676a0721b6189e4e9bd7fc9d805d4bf, type: 3}
+  - {fileID: 1914033502171062683, guid: a002307e214772d49b1f4bdf6a203263, type: 3}
+  - {fileID: 6258240747755526628, guid: de59677c2b9834b4faaae2c34caa7aed, type: 3}
+  - {fileID: 897005446183271866, guid: 515bca72c0002ea418ce7a011be6f6e6, type: 3}
+  - {fileID: 2773955561137284790, guid: fa2f3199d9ae17649ad8ff02ede7c640, type: 3}
+  - {fileID: 4800984122803414871, guid: c73f935b15c93d944ab65a9098a75bbd, type: 3}
+  - {fileID: 1256636211876868028, guid: 9ace1a9f293fec04b849f8ae06e10025, type: 3}
+  - {fileID: 796353430937612205, guid: 83594a4a5086d3440bcc42a61dcc7379, type: 3}
+  - {fileID: 1917213159425193254, guid: 7910babb7041343458409582265bfb68, type: 3}
   activeBattlers: []
   currentTurn: 0
   turnWaiting: 0

@@ -76,7 +76,6 @@ MonoBehaviour:
   defence: 99
   weaponPower: 0
   armorPower: 0
-  hasDied: 0
   theSprite: {fileID: 883867273478991232}
   deadSprite: {fileID: 0}
   aliveSprite: {fileID: 0}
@@ -150,7 +149,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1584734319
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 6731802314796291348, guid: f677d4dc765544a4fa7344d298bc815d,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
