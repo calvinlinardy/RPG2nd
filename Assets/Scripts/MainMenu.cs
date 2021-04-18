@@ -15,14 +15,14 @@ public class MainMenu : MonoBehaviour
     {
         instance = this;
 
-        if (PlayerPrefs.HasKey("Current_Scene"))
+        /*if (PlayerPrefs.HasKey("Current_Scene"))
         {
             continueButton.SetActive(true);
         }
         else
         {
             continueButton.SetActive(false);
-        }
+        }*/
     }
 
     // Update is called once per frame

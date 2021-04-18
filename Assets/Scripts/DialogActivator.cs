@@ -13,6 +13,7 @@ public class DialogActivator : MonoBehaviour
     public string questToMark;
     public bool markComplete;
     public bool clickToActivate;
+    public bool destroyAfterLines;
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +53,10 @@ public class DialogActivator : MonoBehaviour
                 {
                     DialogManager.instance.ShowDialog(lines, isPerson);
                     DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
+                    if (destroyAfterLines)
+                    {
+                        this.gameObject.GetComponentInChildren<BoxCollider2D>().enabled = false;
+                    }
                 }
             }
         }

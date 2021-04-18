@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7483042028633429892
+--- !u!1 &3593483538343933488
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,106 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7483042028633429898}
-  - component: {fileID: 7483042028633429893}
-  - component: {fileID: 7483042028633429896}
-  - component: {fileID: 7483042028633429899}
-  - component: {fileID: 7483042028633429897}
-  - component: {fileID: 7483042028633429902}
+  - component: {fileID: 3593483538343933489}
+  - component: {fileID: 3593483538343933494}
+  - component: {fileID: 2192124253221440849}
+  m_Layer: 0
+  m_Name: Dialog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3593483538343933489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3593483538343933488}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3635160529429390191}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &3593483538343933494
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3593483538343933488}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.12284708, y: -1.309324}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.5393686, y: 4.2955365}
+  m_EdgeRadius: 0
+--- !u!114 &2192124253221440849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3593483538343933488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7e1b975195a56428140f020eb1001f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n-Umbicess
+  - Welcome to Umbiland!
+  - This is a spirited land with a lot of different kind of creatures.
+  - Every creatures have their unique skills and habbit.
+  - Your goal here is to level up and to survive every fight.
+  - If you lose or die, your game will quit and you will restart everything all over
+    again everytime.
+  - You can collect coins that will generated every amount of time in the whole land.
+  - Or you can work with your finger by doing the 'work' thing inside your menu.
+    You can open your menu with right-click on the screen.
+  - You will get some stuffs by winning fight or you can also buy them at the shop
+    in this land.
+  - Keeping some potions in your pocket will be useful, especially health potion.
+    You can be resurrected from your death if you have time to heal with potion.
+  - Remember, there is no quitting. You can not save your progress at all.
+  - And one more thing, you have your own spirit friend inside you. When you got
+    into a fight, you are two.
+  - Go explore and figure things out by yourself!
+  - Good luck!
+  isPerson: 1
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
+  clickToActivate: 0
+  destroyAfterLines: 1
+--- !u!1 &3635160529429390177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3635160529429390191}
+  - component: {fileID: 3635160529429390176}
+  - component: {fileID: 3635160529429390189}
+  - component: {fileID: 3635160529429390187}
   m_Layer: 8
   m_Name: Umbicess
   m_TagString: Untagged
@@ -21,27 +115,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7483042028633429898
+--- !u!4 &3635160529429390191
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7483042028633429892}
+  m_GameObject: {fileID: 3635160529429390177}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.15, y: 3.07, z: 0}
+  m_LocalPosition: {x: -14.53, y: -32.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 3593483538343933489}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7483042028633429893
+--- !u!212 &3635160529429390176
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7483042028633429892}
+  m_GameObject: {fileID: 3635160529429390177}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -86,13 +181,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7483042028633429896
+--- !u!61 &3635160529429390189
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7483042028633429892}
+  m_GameObject: {fileID: 3635160529429390177}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -112,77 +207,14 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7896663, y: 0.8888889}
   m_EdgeRadius: 0
---- !u!61 &7483042028633429899
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7483042028633429892}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.021833181, y: -0.28883696}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.796875, y: 0.84375}
-    newSize: {x: 0.9375, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.6629996, y: 1.4665627}
-  m_EdgeRadius: 0
---- !u!114 &7483042028633429897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7483042028633429892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e7e1b975195a56428140f020eb1001f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lines:
-  - n-Umbicess
-  - Welcome to Umbiland!
-  - This is a spirited land with a lot of different kind of creatures.
-  - Every creatures have their unique skills and habbit.
-  - Your goal here is to level up and to survive every fight.
-  - If you lose or die, your game will quit and you will restart everything all over
-    again everytime.
-  - You can collect coins that will generated every amount of time in the whole land.
-  - Or you can work with your finger by doing the 'work' thing inside your menu.
-    You can open your menu with right-click on the screen.
-  - You will get some stuffs by winning fight or you can also buy them at the shop
-    in this land.
-  - Keeping some potions in your pocket will be useful, especially health potion.
-    You can be resurrected from your death if you have time to heal with potion.
-  - Remember, there is no quitting. You can not save your progress at all.
-  - And one more thing, you have your own spirit friend inside you. When you got
-    into a fight, you are two.
-  - Go explore and figure things out by yourself!
-  - Good luck!
-  isPerson: 1
-  shouldActivateQuest: 0
-  questToMark: 
-  markComplete: 0
-  clickToActivate: 0
---- !u!95 &7483042028633429902
+--- !u!95 &3635160529429390187
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7483042028633429892}
+  m_GameObject: {fileID: 3635160529429390177}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 0b7540f623e37664fb45e13aed6a380d, type: 2}
