@@ -66,16 +66,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 0
   movesAvailable:
+  - Pfft
+  - Phew
   - Boom
+  - Bam
+  - Buzz
+  - Fire
+  - Ice
+  - Plasma
+  - Jingle Bells
+  - Posion Claw
   charName: Iron Umbi
-  currentHp: 999
-  maxHp: 999
-  currentMP: 999
-  maxMP: 999
+  currentHp: 6000
+  maxHp: 6000
+  currentMP: 4500
+  maxMP: 4500
   strength: 99
   defence: 99
-  weaponPower: 0
-  armorPower: 0
+  weaponPower: 50
+  armorPower: 50
   theSprite: {fileID: 883867273478991232}
   deadSprite: {fileID: 0}
   aliveSprite: {fileID: 0}

@@ -147,10 +147,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Plasma
   charName: Sunbi
-  currentHp: 800
-  maxHp: 800
+  currentHp: 500
+  maxHp: 500
   currentMP: 500
   maxMP: 500
   strength: 35

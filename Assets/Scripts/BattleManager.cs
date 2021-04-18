@@ -603,7 +603,7 @@ public class BattleManager : MonoBehaviour
             BattleReward.instance.OpenRewardScreen(rewardEXP, rewardItems);
         }
 
-        AudioManager.instance.PlayBGM(3);
+        AudioManager.instance.PlayBGM(2);
     }
 
     public IEnumerator GameOverCo()

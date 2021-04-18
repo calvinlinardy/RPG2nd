@@ -65,11 +65,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Fire
+  - Ice
+  - Phew
   charName: ShopKeeper
   currentHp: 350
   maxHp: 350
-  currentMP: 1000
+  currentMP: 700
   maxMP: 1000
   strength: 7
   defence: 10

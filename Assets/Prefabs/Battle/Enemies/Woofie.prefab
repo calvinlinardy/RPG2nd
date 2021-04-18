@@ -147,15 +147,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Poison Claw
   charName: Woofie
   currentHp: 600
   maxHp: 600
-  currentMP: 300
-  maxMP: 300
-  strength: 6
+  currentMP: 1000
+  maxMP: 1000
+  strength: 10
   defence: 7
-  weaponPower: 0
+  weaponPower: 5
   armorPower: 0
   theSprite: {fileID: 5468563187418119094}
   deadSprite: {fileID: 0}

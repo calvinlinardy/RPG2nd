@@ -230,6 +230,12 @@ public class GameMenu : MonoBehaviour
         QuestManager.instance.SaveQuestData();
     }
 
+    public void Work()
+    {
+        GameManager.instance.currentGold += 1;
+        UpdateMainStats();
+    }
+
     public void PlayButtonSound(int SFx)
     {
         AudioManager.instance.PlaySFX(SFx);

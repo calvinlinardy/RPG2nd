@@ -149,6 +149,10 @@ MonoBehaviour:
   isPlayer: 0
   movesAvailable:
   - Pfft
+  - Phew
+  - Buzz
+  - Boom
+  - Bam
   charName: Umbicorn
   currentHp: 2000
   maxHp: 2000

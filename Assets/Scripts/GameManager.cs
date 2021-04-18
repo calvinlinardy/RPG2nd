@@ -52,15 +52,15 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.J)) //TEMPORARY
         {
-            AddItem("Iron Armor");
-            AddItem("Blabla");
+            //AddItem("Iron Armor");
+            //AddItem("Blabla");
             AddItem("Health Potion");
 
-            RemoveItem("Leather Armor");
-            RemoveItem("Blublu");
+            //RemoveItem("Leather Armor");
+            //RemoveItem("Blublu");
         }
 
-        if (Input.GetKeyDown(KeyCode.O)) // TEMPORARY
+        /*if (Input.GetKeyDown(KeyCode.O)) // TEMPORARY
         {
             SaveData();
             Debug.Log("Game Saved.");
@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
         {
             LoadData();
             Debug.Log("Game Loaded.");
-        }
+        }*/
 
         if (loadFromMainMenu)
         {

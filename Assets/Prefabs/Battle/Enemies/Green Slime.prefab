@@ -118,6 +118,7 @@ MonoBehaviour:
   isPlayer: 0
   movesAvailable:
   - Slash
+  - Pfft
   charName: Green Slime
   currentHp: 250
   maxHp: 250

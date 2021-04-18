@@ -65,16 +65,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Phew
   charName: Umcat
   currentHp: 50
   maxHp: 50
-  currentMP: 20
-  maxMP: 20
-  strength: 5
-  defence: 3
+  currentMP: 1000
+  maxMP: 1000
+  strength: 2
+  defence: 99
   weaponPower: 0
-  armorPower: 0
+  armorPower: 50
   theSprite: {fileID: 2926716663683161868}
   deadSprite: {fileID: 0}
   aliveSprite: {fileID: 0}

@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class musicBox : MonoBehaviour
 {
+    public static musicBox instance;
     public int musicToPlay;
     private bool musicStarted;
     // Start is called before the first frame update
     void Start()
     {
-
+        instance = this;
     }
 
     // Update is called once per frame
