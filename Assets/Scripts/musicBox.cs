@@ -21,5 +21,16 @@ public class musicBox : MonoBehaviour
             musicStarted = true;
             AudioManager.instance.PlayBGM(musicToPlay);
         }
+
+        if (BattleManager.instance.battleActive == true)
+        {
+            AudioManager.instance.StopMusic(musicToPlay);
+            musicStarted = false;
+            if (!musicStarted)
+            {
+                musicStarted = true;
+                AudioManager.instance.PlayBGM(3);
+            }
+        }
     }
 }

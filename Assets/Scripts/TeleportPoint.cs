@@ -26,7 +26,7 @@ public class TeleportPoint : MonoBehaviour
             {
                 loadAfterFade = false;
                 sceneLoader.EnteringTeleport(sceneToLoad);
-                AudioManager.instance.StopMusic();
+                AudioManager.instance.StopMusic(musicBox.instance.musicToPlay);
                 /*if (sceneToLoad == "Shop")
                 {
                     AudioManager.instance.PlayBGM(1);

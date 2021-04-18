@@ -43,7 +43,7 @@ public class GameMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire2") && BattleManager.instance.battleActive == false)
+        if (Input.GetButtonDown("Fire2") && BattleManager.instance.battleActive == false && !DialogManager.instance.dialogBox.activeInHierarchy)
         {
             if (theMenu.activeInHierarchy)
             {
@@ -170,6 +170,7 @@ public class GameMenu : MonoBehaviour
             }
             else
             {
+                //itemButtons[i].gameObject.SetActive(false);
                 itemButtons[i].buttonImage.gameObject.SetActive(false);
                 itemButtons[i].amountText.text = "";
             }

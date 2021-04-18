@@ -1364,7 +1364,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 416767b5bbdb3e24e8f385bece614050, type: 3}
-    m_FontSize: 90
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -2882,17 +2882,16 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 6136776851093919488, guid: 9e1a8cf9779f79246a657ac936497dcb, type: 3}
   - {fileID: 5805864926515596953, guid: 27269eea3460d0f4f8b2bc0e25ef70cd, type: 3}
-  - {fileID: 1410503434662646447, guid: dace785adf4a2994dbfca5a6ac6b4989, type: 3}
+  - {fileID: 1917213159425193254, guid: 7910babb7041343458409582265bfb68, type: 3}
   - {fileID: 7156845132779668381, guid: b0826310bda81bb44a8429a5d455ea44, type: 3}
   - {fileID: 883867272694215730, guid: 6676a0721b6189e4e9bd7fc9d805d4bf, type: 3}
   - {fileID: 1914033502171062683, guid: a002307e214772d49b1f4bdf6a203263, type: 3}
   - {fileID: 6258240747755526628, guid: de59677c2b9834b4faaae2c34caa7aed, type: 3}
-  - {fileID: 897005446183271866, guid: 515bca72c0002ea418ce7a011be6f6e6, type: 3}
+  - {fileID: 3118405170627445060, guid: 515bca72c0002ea418ce7a011be6f6e6, type: 3}
   - {fileID: 2773955561137284790, guid: fa2f3199d9ae17649ad8ff02ede7c640, type: 3}
   - {fileID: 4800984122803414871, guid: c73f935b15c93d944ab65a9098a75bbd, type: 3}
   - {fileID: 1256636211876868028, guid: 9ace1a9f293fec04b849f8ae06e10025, type: 3}
   - {fileID: 796353430937612205, guid: 83594a4a5086d3440bcc42a61dcc7379, type: 3}
-  - {fileID: 1917213159425193254, guid: 7910babb7041343458409582265bfb68, type: 3}
   activeBattlers: []
   currentTurn: 0
   turnWaiting: 0
@@ -13064,8 +13063,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 927.9, y: -461}
-  m_SizeDelta: {x: 917.56226, y: 348.52704}
+  m_AnchoredPosition: {x: 303.13, y: -742}
+  m_SizeDelta: {x: 569.90295, y: 102.49112}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4605952399787343895
 CanvasRenderer:

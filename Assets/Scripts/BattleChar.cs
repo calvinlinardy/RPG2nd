@@ -49,5 +49,12 @@ public class BattleChar : MonoBehaviour
     public void SetDieAnimation()
     {
         myAnim.SetTrigger("hasDied");
+        myAnim.ResetTrigger("awaken");
+    }
+
+    public void SetAliveAnimation()
+    {
+        myAnim.SetTrigger("awaken");
+        myAnim.ResetTrigger("hasDied");
     }
 }

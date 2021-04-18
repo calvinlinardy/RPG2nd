@@ -62,6 +62,15 @@ public class BattleManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    private void Awake()
+    {
+        int battleManagerCount = FindObjectsOfType<BattleManager>().Length;
+        if (battleManagerCount > 1)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -105,8 +114,6 @@ public class BattleManager : MonoBehaviour
             transform.position = new Vector3(Camera.main.transform.position.x,
             Camera.main.transform.position.y, transform.position.z); //buat bikin BG ngikutin camera
             battleScene.SetActive(true);
-
-            AudioManager.instance.PlayBGM(3);
 
             for (int i = 0; i < playerPos.Length; i++)
             {
@@ -206,6 +213,14 @@ public class BattleManager : MonoBehaviour
                 else
                 {
                     allEnemiesDead = false;
+                }
+            }
+
+            if (activeBattlers[i].currentHp != 0)
+            {
+                if (activeBattlers[i].isPlayer)
+                {
+                    activeBattlers[i].SetAliveAnimation();
                 }
             }
         }
@@ -602,8 +617,8 @@ public class BattleManager : MonoBehaviour
         {
             BattleReward.instance.OpenRewardScreen(rewardEXP, rewardItems);
         }
-
-        AudioManager.instance.PlayBGM(2);
+        AudioManager.instance.StopMusic(3);
+        AudioManager.instance.PlayBGM(musicBox.instance.musicToPlay);
     }
 
     public IEnumerator GameOverCo()

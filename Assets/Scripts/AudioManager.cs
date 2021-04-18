@@ -43,11 +43,8 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void StopMusic()
+    public void StopMusic(int musicToStop)
     {
-        for (int i = 0; i < bgm.Length; i++)
-        {
-            bgm[i].Stop();
-        }
+        bgm[musicToStop].Stop();
     }
 }

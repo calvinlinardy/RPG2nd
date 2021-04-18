@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public Item[] referenceItems;
     public bool loadFromMainMenu = false;
     public bool hasGameMenu = false;
+    public int numberOfItemReference;
 
     public int currentGold;
     // Start is called before the first frame update
@@ -197,6 +198,7 @@ public class GameManager : MonoBehaviour
         else
         {
             Debug.LogError("Couldn't find " + itemToRemove);
+
         }
     }
 
@@ -275,5 +277,17 @@ public class GameManager : MonoBehaviour
             itemsHeld[i] = PlayerPrefs.GetString("ItemInInventory_" + i);
             numberOfItem[i] = PlayerPrefs.GetInt("ItemAmount_" + i);
         }
+    }
+
+    public int CheckNumberOfItem(string itemName)
+    {
+        for (int i = 0; i < itemsHeld[i].Length; i++)
+        {
+            if (itemsHeld[i] == itemName)
+            {
+                numberOfItemReference = numberOfItem[i];
+            }
+        }
+        return numberOfItemReference;
     }
 }
