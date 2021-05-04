@@ -74,10 +74,10 @@ public class BattleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
+        /*if (Input.GetKeyDown(KeyCode.Z))
         {
             BattleStart(new string[] { "Umbicorn" }, false); //sementara
-        }
+        }*/
 
         if (battleActive)
         {
@@ -95,10 +95,10 @@ public class BattleManager : MonoBehaviour
                     StartCoroutine(EnemyMoveCo());
                 }
             }
-            if (Input.GetKeyDown(KeyCode.N)) //Sementara
+            /*if (Input.GetKeyDown(KeyCode.N)) //Sementara
             {
                 NextTurn();
-            }
+            }*/
         }
     }
 
@@ -303,7 +303,7 @@ public class BattleManager : MonoBehaviour
         int damageToGive = Mathf.RoundToInt(damageCalc);
 
         Debug.Log(activeBattlers[currentTurn].charName + " is dealing " + damageCalc + " (" +
-        damageToGive + ") damage to " + activeBattlers[target].charName);
+        damageToGive + ") damage to " + activeBattlers[target].charName); //sementara cuma buat liat di console
 
         activeBattlers[target].currentHp -= damageToGive;
 

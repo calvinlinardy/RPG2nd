@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
             Player.instance.canMove = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.J)) //TEMPORARY
+        /*if (Input.GetKeyDown(KeyCode.J)) //TEMPORARY
         {
             //AddItem("Iron Armor");
             //AddItem("Blabla");

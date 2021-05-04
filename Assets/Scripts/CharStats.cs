@@ -39,10 +39,10 @@ public class CharStats : MonoBehaviour
     void Update()
     {
         UpdateExp();
-        if (Input.GetKeyDown(KeyCode.K))
+        /*if (Input.GetKeyDown(KeyCode.K))
         {
             AddExp(500);
-        }
+        }*/
     }
 
     public void AddExp(int expToAdd)
