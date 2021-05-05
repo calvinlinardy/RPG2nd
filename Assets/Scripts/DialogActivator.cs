@@ -13,12 +13,14 @@ public class DialogActivator : MonoBehaviour
     public string questToMark;
     public bool markComplete;
     public bool clickToActivate;
+    public bool clickAfterTrigger;
     public bool destroyAfterLines;
+    AudioSource audioSrc;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        audioSrc = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -31,6 +33,13 @@ public class DialogActivator : MonoBehaviour
             {
                 DialogManager.instance.ShowDialog(lines, isPerson);
                 DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
+                if (audioSrc)
+                {
+                    if (!audioSrc.isPlaying)
+                    {
+                        audioSrc.Play();
+                    }
+                }
             }
         }
     }
@@ -53,6 +62,18 @@ public class DialogActivator : MonoBehaviour
                 {
                     DialogManager.instance.ShowDialog(lines, isPerson);
                     DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
+                    if (audioSrc)
+                    {
+                        if (!audioSrc.isPlaying)
+                        {
+                            audioSrc.Play();
+                        }
+                    }
+                    if (clickAfterTrigger)
+                    {
+                        clickToActivate = true;
+                        clickAfterTrigger = false;
+                    }
                     if (destroyAfterLines)
                     {
                         this.gameObject.GetComponentInChildren<BoxCollider2D>().enabled = false;

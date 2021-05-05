@@ -49,7 +49,7 @@ MonoBehaviour:
     - Freaks
     rewardEXP: 0
     rewardItems:
-    - Heatlh Potion
+    - Health Potion
     - Mana Potion
     - Iron Armor
     - Iron Sword
@@ -386,6 +386,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dialog
+      objectReference: {fileID: 0}
+    - target: {fileID: 9187026835589660719, guid: cd2ad6791b86d474f8d04fbf01b67c4a,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.22045135
+      objectReference: {fileID: 0}
+    - target: {fileID: 9187026835589660719, guid: cd2ad6791b86d474f8d04fbf01b67c4a,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.27268386
+      objectReference: {fileID: 0}
+    - target: {fileID: 9187026835589660719, guid: cd2ad6791b86d474f8d04fbf01b67c4a,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 13.290916
+      objectReference: {fileID: 0}
+    - target: {fileID: 9187026835589660719, guid: cd2ad6791b86d474f8d04fbf01b67c4a,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.2226644
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2ad6791b86d474f8d04fbf01b67c4a, type: 3}

@@ -2403,7 +2403,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is the description of the item.
+  m_Text: 
 --- !u!1 &115476300
 GameObject:
   m_ObjectHideFlags: 0
@@ -5053,6 +5053,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 0
+      - m_Target: {fileID: 5709306736514360369}
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &235459699
 GameObject:
   m_ObjectHideFlags: 0
@@ -6735,7 +6746,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is the description of the item.
+  m_Text: 
 --- !u!1 &324392766
 GameObject:
   m_ObjectHideFlags: 0
@@ -6827,7 +6838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &332360813
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7924,9 +7935,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '150
-
-'
+  m_Text: 
 --- !u!1 &406134110
 GameObject:
   m_ObjectHideFlags: 0
@@ -9124,7 +9133,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is the description of the item.
+  m_Text: 
 --- !u!1 &464749221
 GameObject:
   m_ObjectHideFlags: 0
@@ -11065,7 +11074,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &571569440
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16013,7 +16022,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Items Name
+  m_Text: 
 --- !u!1 &828728879
 GameObject:
   m_ObjectHideFlags: 0
@@ -17466,7 +17475,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Items Name
+  m_Text: 
 --- !u!1 &927644680
 GameObject:
   m_ObjectHideFlags: 0
@@ -22664,7 +22673,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1260500132
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32846,7 +32855,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Items Name
+  m_Text: 
 --- !u!1 &1797129400
 GameObject:
   m_ObjectHideFlags: 0
@@ -33472,9 +33481,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '150
-
-'
+  m_Text: 
 --- !u!1 &1815635733
 GameObject:
   m_ObjectHideFlags: 0
@@ -40682,6 +40689,9 @@ MonoBehaviour:
   statusButtons:
   - {fileID: 884638006}
   - {fileID: 1233012680}
+  itemActionWindow: {fileID: 1260500131}
+  buyActionWindow: {fileID: 571569439}
+  sellActionWindow: {fileID: 332360812}
   statusName: {fileID: 658360006}
   statusHP: {fileID: 1054450525}
   statusMP: {fileID: 1992647190}

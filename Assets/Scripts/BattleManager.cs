@@ -44,11 +44,10 @@ public class BattleManager : MonoBehaviour
     public GameObject itemCharChoiceMenu;
     public Text[] itemCharChoiceNames;
     public CharStats[] playerStats;
+    public GameObject itemActionWindow;
     public int chanceToFlee = 35;
 
     public string gameOverScene;
-
-    public GameObject theCamera;
 
     private bool itemShown = false;
     private bool fleeing;
@@ -74,10 +73,10 @@ public class BattleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             BattleStart(new string[] { "Umbicorn" }, false); //sementara
-        }*/
+        }
 
         if (battleActive)
         {
@@ -633,7 +632,6 @@ public class BattleManager : MonoBehaviour
         //Destroy(GameMenu.instance.gameObject);
         Destroy(AudioManager.instance.gameObject);
         Destroy(BattleManager.instance.gameObject);
-        Destroy(theCamera.gameObject);
 
         SceneManager.LoadScene("Main Menu");
         UIFade.instance.FadeFromBlack();

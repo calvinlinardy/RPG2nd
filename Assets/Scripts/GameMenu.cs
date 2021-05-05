@@ -13,6 +13,7 @@ public class GameMenu : MonoBehaviour
     public GameObject[] charStatsHolder;
     public GameObject[] windows;
     public GameObject[] statusButtons;
+    public GameObject itemActionWindow, buyActionWindow, sellActionWindow;
     public Text statusName, statusHP, statusMP, statusStr, statusDef,
     statusWpnEqpd, statusWpnPwr, statusAmrEqpd, statusAmrPwr, statusExp;
     public Image statusImg;
@@ -240,5 +241,10 @@ public class GameMenu : MonoBehaviour
     public void PlayButtonSound(int SFx)
     {
         AudioManager.instance.PlaySFX(SFx);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

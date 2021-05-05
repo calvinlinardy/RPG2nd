@@ -27,7 +27,14 @@ public class BattleItemSelect : MonoBehaviour
         {
             if (GameManager.instance.itemsHeld[buttonValue] != "")
             {
+                BattleManager.instance.itemActionWindow.SetActive(true);
                 BattleManager.instance.SelectItem(GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[buttonValue]));
+            }
+            else
+            {
+                BattleManager.instance.itemActionWindow.SetActive(false);
+                BattleManager.instance.itemName.text = "";
+                BattleManager.instance.itemDescription.text = "";
             }
         }
     }

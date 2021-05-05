@@ -3023,9 +3023,9 @@ MonoBehaviour:
   - {fileID: 4605952399413480223}
   - {fileID: 4605952399834205373}
   playerStats: []
+  itemActionWindow: {fileID: 4605952399178385972}
   chanceToFlee: 35
   gameOverScene: Game Over
-  theCamera: {fileID: 0}
   rewardEXP: 250
   rewardItems:
   - Wooden Sword
@@ -8085,7 +8085,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4605952399178385971
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9150,7 +9150,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Items Name
+  m_Text: 
 --- !u!1 &4605952399310583873
 GameObject:
   m_ObjectHideFlags: 0
@@ -14447,7 +14447,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is the description of the item.
+  m_Text: 
 --- !u!1 &4605952399981749315
 GameObject:
   m_ObjectHideFlags: 0
