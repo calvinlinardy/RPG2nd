@@ -147,7 +147,13 @@ public class Shop : MonoBehaviour
                 GameManager.instance.RemoveItem(selectedItem.itemName);
                 numberOfSelectedItem--;
             }
-
+            if (numberOfSelectedItem == 0)
+            {
+                GameMenu.instance.sellActionWindow.SetActive(false);
+                sellItemName.text = "";
+                sellItemDesc.text = "";
+                sellItemValue.text = "";
+            }
         }
         goldText.text = GameManager.instance.currentGold.ToString();
         ShowSellItems();

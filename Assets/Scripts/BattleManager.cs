@@ -75,7 +75,7 @@ public class BattleManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            BattleStart(new string[] { "Umbicorn" }, false); //sementara
+            BattleStart(new string[] { "Carrot" }, false); //sementara
         }
 
         if (battleActive)
@@ -234,7 +234,7 @@ public class BattleManager : MonoBehaviour
             else
             {
                 //game over
-                //Application.Quit();
+                Application.Quit();
                 Debug.Log("Quit Game");
             }
             /*
@@ -254,7 +254,6 @@ public class BattleManager : MonoBehaviour
             }
         }
     }
-
 
     public IEnumerator EnemyMoveCo()
     {
@@ -365,6 +364,7 @@ public class BattleManager : MonoBehaviour
     public void OpenTargetMenu(string moveName)
     {
         targetMenu.SetActive(true);
+        itemMenu.SetActive(false);
 
         List<int> enemies = new List<int>();
         for (int i = 0; i < activeBattlers.Count; i++)
@@ -393,6 +393,7 @@ public class BattleManager : MonoBehaviour
     public void OpenMagicMenu()
     {
         magicMenu.SetActive(true);
+        itemMenu.SetActive(false);
 
         for (int i = 0; i < magicButtons.Length; i++)
         {
@@ -421,6 +422,7 @@ public class BattleManager : MonoBehaviour
 
     public void Flee()
     {
+        itemMenu.SetActive(false);
         if (cannotFlee)
         {
             battleNotice.theText.text = "Cannot flee this battle!";
@@ -451,6 +453,9 @@ public class BattleManager : MonoBehaviour
     {
         if (itemShown == false)
         {
+            itemActionWindow.SetActive(false);
+            itemName.text = "";
+            itemDescription.text = "";
             itemShown = true;
             itemMenu.SetActive(true);
             GameManager.instance.SortItems();
