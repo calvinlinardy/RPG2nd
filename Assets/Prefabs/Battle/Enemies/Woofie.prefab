@@ -150,8 +150,8 @@ MonoBehaviour:
   movesAvailable:
   - Poison Claw
   charName: Woofie
-  currentHp: 600
-  maxHp: 600
+  currentHp: 350
+  maxHp: 350
   currentMP: 1000
   maxMP: 1000
   strength: 10

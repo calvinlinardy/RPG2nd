@@ -13,6 +13,7 @@ public class BattleReward : MonoBehaviour
     public int expEarned;
     public bool markQuestComplete;
     public string questToMark;
+    public bool rewardScreenOpened = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +43,7 @@ public class BattleReward : MonoBehaviour
         }
 
         rewardScreen.SetActive(true);
+        rewardScreenOpened = true;
     }
 
     public void CloseRewardScreen()
@@ -60,6 +62,7 @@ public class BattleReward : MonoBehaviour
         }
 
         rewardScreen.SetActive(false);
+        rewardScreenOpened = false;
         GameManager.instance.battleActive = false;
 
         if (markQuestComplete)

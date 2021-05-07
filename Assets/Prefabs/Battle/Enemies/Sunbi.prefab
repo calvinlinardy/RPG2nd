@@ -151,14 +151,14 @@ MonoBehaviour:
   - Slash
   - Plasma
   charName: Sunbi
-  currentHp: 500
-  maxHp: 500
+  currentHp: 100
+  maxHp: 100
   currentMP: 500
   maxMP: 500
-  strength: 35
-  defence: 10
-  weaponPower: 15
-  armorPower: 5
+  strength: 5
+  defence: 5
+  weaponPower: 7
+  armorPower: 6
   theSprite: {fileID: 2773955560494599713}
   deadSprite: {fileID: 0}
   aliveSprite: {fileID: 0}

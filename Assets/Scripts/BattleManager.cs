@@ -73,10 +73,11 @@ public class BattleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
+        /*if (Input.GetKeyDown(KeyCode.Z))
         {
             BattleStart(new string[] { "Carrot" }, false); //sementara
         }
+        */
 
         if (battleActive)
         {
