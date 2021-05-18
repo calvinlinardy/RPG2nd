@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public float movementSpeed = 5f;
+    [HideInInspector] public float movementSpeed;
+    public float walkingSpeed = 4f;
+    public float runningSpeed = 6f;
     [HideInInspector] public float movementX = 0;
     [HideInInspector] public float movementY = 0;
     public bool canMove = true;
@@ -41,9 +43,18 @@ public class Player : MonoBehaviour
         movementX = Input.GetAxisRaw("Horizontal");
         movementY = Input.GetAxisRaw("Vertical");
 
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        {
+            movementSpeed = runningSpeed;
+        }
+        else
+        {
+            movementSpeed = walkingSpeed;
+        }
+
         if (canMove)
         {
-            myRb.velocity = new Vector2(movementX, movementY) * movementSpeed;
+            myRb.velocity = new Vector2(movementX, movementY).normalized * movementSpeed;
             if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
             {
                 if (!audioSrc.isPlaying)

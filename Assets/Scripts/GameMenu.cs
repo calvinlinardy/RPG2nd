@@ -44,7 +44,7 @@ public class GameMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire2") && BattleManager.instance.battleActive == false && !DialogManager.instance.dialogBox.activeInHierarchy
+        if (Input.GetButtonDown("Fire2") || Input.GetKeyDown(KeyCode.Tab) && BattleManager.instance.battleActive == false && !DialogManager.instance.dialogBox.activeInHierarchy
         && BattleReward.instance.rewardScreenOpened == false)
         {
             if (theMenu.activeInHierarchy)
@@ -248,5 +248,6 @@ public class GameMenu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+        Debug.Log("Quit Game");
     }
 }
