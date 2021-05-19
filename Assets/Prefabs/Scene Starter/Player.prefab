@@ -170,6 +170,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
+  walkingSpeed: 3.8
+  runningSpeed: 5.7
   movementX: 0
   movementY: 0
   canMove: 1
