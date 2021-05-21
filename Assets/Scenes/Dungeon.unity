@@ -716,17 +716,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -811,17 +811,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -1001,17 +1001,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -1199,17 +1199,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -1392,17 +1392,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -1487,17 +1487,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -1677,17 +1677,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -1867,17 +1867,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -2057,17 +2057,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -2152,17 +2152,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -2342,17 +2342,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -2437,17 +2437,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -2532,17 +2532,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -2722,17 +2722,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -2817,17 +2817,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -2912,17 +2912,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -3007,17 +3007,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -3102,17 +3102,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -3197,17 +3197,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -3292,17 +3292,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -3482,17 +3482,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -3808,17 +3808,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -3998,17 +3998,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -4093,17 +4093,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -4188,17 +4188,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -4283,17 +4283,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -4632,17 +4632,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -4727,17 +4727,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -4822,17 +4822,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -4917,17 +4917,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -5182,17 +5182,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -5277,17 +5277,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -5372,17 +5372,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -5467,17 +5467,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -5752,17 +5752,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -5879,17 +5879,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -5974,17 +5974,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -6069,17 +6069,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -6164,17 +6164,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -6259,17 +6259,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -6518,17 +6518,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -6613,17 +6613,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -6708,17 +6708,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -6803,17 +6803,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -6898,17 +6898,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -7088,17 +7088,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -7183,17 +7183,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -7278,17 +7278,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -7468,17 +7468,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -7563,17 +7563,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -7658,17 +7658,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -8038,17 +8038,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -8133,17 +8133,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
@@ -8228,17 +8228,17 @@ PrefabInstance:
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxRespawnRate
-      value: 15
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: minGold
-      value: 200
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8715234232438400911, guid: 2dfadff06a99943438f7d22cdeb040f7,
         type: 3}
       propertyPath: maxGold
-      value: 700
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfadff06a99943438f7d22cdeb040f7, type: 3}
