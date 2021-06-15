@@ -13,6 +13,7 @@ public class GameMenu : MonoBehaviour
     public GameObject[] charStatsHolder;
     public GameObject[] windows;
     public GameObject[] statusButtons;
+    public GameObject itemActionWindow, buyActionWindow, sellActionWindow;
     public Text statusName, statusHP, statusMP, statusStr, statusDef,
     statusWpnEqpd, statusWpnPwr, statusAmrEqpd, statusAmrPwr, statusExp;
     public Image statusImg;
@@ -25,7 +26,7 @@ public class GameMenu : MonoBehaviour
     public GameObject itemCharChoiceMenu;
     public Text[] itemCharChoiceName;
     public static GameMenu instance;
-    public Text goldText;
+    public Text goldText, goldTextBig;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +44,8 @@ public class GameMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire2"))
+        if ((Input.GetButtonDown("Fire2") || Input.GetKeyDown(KeyCode.Tab)) && BattleManager.instance.battleActive == false && !DialogManager.instance.dialogBox.activeInHierarchy
+        && BattleReward.instance.rewardScreenOpened == false)
         {
             if (theMenu.activeInHierarchy)
             {
@@ -60,9 +62,9 @@ public class GameMenu : MonoBehaviour
                     GameManager.instance.gameMenuOpen = true;
                 }
             }
-
-            AudioManager.instance.PlaySFX(5);
+            AudioManager.instance.PlaySFX(11);
         }
+        UpdateMainStats();
     }
 
     public void UpdateMainStats()
@@ -89,6 +91,7 @@ public class GameMenu : MonoBehaviour
             }
         }
         goldText.text = GameManager.instance.currentGold.ToString();
+        goldTextBig.text = GameManager.instance.currentGold.ToString();
     }
 
     public void ToggleWindows(int windowsNumber)
@@ -170,6 +173,7 @@ public class GameMenu : MonoBehaviour
             }
             else
             {
+                //itemButtons[i].gameObject.SetActive(false);
                 itemButtons[i].buttonImage.gameObject.SetActive(false);
                 itemButtons[i].amountText.text = "";
             }
@@ -230,8 +234,20 @@ public class GameMenu : MonoBehaviour
         QuestManager.instance.SaveQuestData();
     }
 
-    public void PlayButtonSound()
+    public void Work()
     {
-        AudioManager.instance.PlaySFX(4);
+        GameManager.instance.currentGold += 1;
+        UpdateMainStats();
+    }
+
+    public void PlayButtonSound(int SFx)
+    {
+        AudioManager.instance.PlaySFX(SFx);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Quit Game");
     }
 }

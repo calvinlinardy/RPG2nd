@@ -44,11 +44,10 @@ public class BattleManager : MonoBehaviour
     public GameObject itemCharChoiceMenu;
     public Text[] itemCharChoiceNames;
     public CharStats[] playerStats;
+    public GameObject itemActionWindow;
     public int chanceToFlee = 35;
 
     public string gameOverScene;
-
-    public GameObject theCamera;
 
     private bool itemShown = false;
     private bool fleeing;
@@ -62,13 +61,23 @@ public class BattleManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    private void Awake()
+    {
+        int battleManagerCount = FindObjectsOfType<BattleManager>().Length;
+        if (battleManagerCount > 1)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
+        /*if (Input.GetKeyDown(KeyCode.Z))
         {
-            BattleStart(new string[] { "Slime" }, false); //sementara
+            BattleStart(new string[] { "Carrot" }, false); //sementara
         }
+        */
 
         if (battleActive)
         {
@@ -86,10 +95,10 @@ public class BattleManager : MonoBehaviour
                     StartCoroutine(EnemyMoveCo());
                 }
             }
-            if (Input.GetKeyDown(KeyCode.N)) //Sementara
+            /*if (Input.GetKeyDown(KeyCode.N)) //Sementara
             {
                 NextTurn();
-            }
+            }*/
         }
     }
 
@@ -105,8 +114,6 @@ public class BattleManager : MonoBehaviour
             transform.position = new Vector3(Camera.main.transform.position.x,
             Camera.main.transform.position.y, transform.position.z); //buat bikin BG ngikutin camera
             battleScene.SetActive(true);
-
-            AudioManager.instance.PlayBGM(0);
 
             for (int i = 0; i < playerPos.Length; i++)
             {
@@ -183,12 +190,13 @@ public class BattleManager : MonoBehaviour
                 activeBattlers[i].currentHp = 0;
             }
 
-            if (activeBattlers[i].currentHp == 0)
+            if (activeBattlers[i].currentHp <= 0)
             {
                 //handle dead battler
                 if (activeBattlers[i].isPlayer)
                 {
-                    activeBattlers[i].theSprite.sprite = activeBattlers[i].deadSprite;
+                    //activeBattlers[i].theSprite.sprite = activeBattlers[i].deadSprite;
+                    activeBattlers[i].SetDieAnimation();
                 }
                 else
                 {
@@ -200,11 +208,19 @@ public class BattleManager : MonoBehaviour
                 if (activeBattlers[i].isPlayer)
                 {
                     allPlayersDead = false;
-                    activeBattlers[i].theSprite.sprite = activeBattlers[i].aliveSprite;
+                    //activeBattlers[i].theSprite.sprite = activeBattlers[i].aliveSprite;
                 }
                 else
                 {
                     allEnemiesDead = false;
+                }
+            }
+
+            if (activeBattlers[i].currentHp != 0)
+            {
+                if (activeBattlers[i].isPlayer)
+                {
+                    activeBattlers[i].SetAliveAnimation();
                 }
             }
         }
@@ -219,7 +235,7 @@ public class BattleManager : MonoBehaviour
             else
             {
                 //game over
-                //Application.Quit();
+                Application.Quit();
                 Debug.Log("Quit Game");
             }
             /*
@@ -239,7 +255,6 @@ public class BattleManager : MonoBehaviour
             }
         }
     }
-
 
     public IEnumerator EnemyMoveCo()
     {
@@ -287,7 +302,7 @@ public class BattleManager : MonoBehaviour
         int damageToGive = Mathf.RoundToInt(damageCalc);
 
         Debug.Log(activeBattlers[currentTurn].charName + " is dealing " + damageCalc + " (" +
-        damageToGive + ") damage to " + activeBattlers[target].charName);
+        damageToGive + ") damage to " + activeBattlers[target].charName); //sementara cuma buat liat di console
 
         activeBattlers[target].currentHp -= damageToGive;
 
@@ -350,6 +365,7 @@ public class BattleManager : MonoBehaviour
     public void OpenTargetMenu(string moveName)
     {
         targetMenu.SetActive(true);
+        itemMenu.SetActive(false);
 
         List<int> enemies = new List<int>();
         for (int i = 0; i < activeBattlers.Count; i++)
@@ -378,6 +394,7 @@ public class BattleManager : MonoBehaviour
     public void OpenMagicMenu()
     {
         magicMenu.SetActive(true);
+        itemMenu.SetActive(false);
 
         for (int i = 0; i < magicButtons.Length; i++)
         {
@@ -406,6 +423,7 @@ public class BattleManager : MonoBehaviour
 
     public void Flee()
     {
+        itemMenu.SetActive(false);
         if (cannotFlee)
         {
             battleNotice.theText.text = "Cannot flee this battle!";
@@ -436,6 +454,9 @@ public class BattleManager : MonoBehaviour
     {
         if (itemShown == false)
         {
+            itemActionWindow.SetActive(false);
+            itemName.text = "";
+            itemDescription.text = "";
             itemShown = true;
             itemMenu.SetActive(true);
             GameManager.instance.SortItems();
@@ -520,6 +541,11 @@ public class BattleManager : MonoBehaviour
         }
     }
 
+    public void PlayButtonSound(int SFx)
+    {
+        AudioManager.instance.PlaySFX(SFx);
+    }
+
     public void UpdateStatsToGM()
     {
         for (int i = 0; i < activeBattlers.Count; i++)
@@ -596,8 +622,8 @@ public class BattleManager : MonoBehaviour
         {
             BattleReward.instance.OpenRewardScreen(rewardEXP, rewardItems);
         }
-
-        AudioManager.instance.PlayBGM(3);
+        AudioManager.instance.StopMusic(3);
+        AudioManager.instance.PlayBGM(musicBox.instance.musicToPlay);
     }
 
     public IEnumerator GameOverCo()
@@ -612,7 +638,6 @@ public class BattleManager : MonoBehaviour
         //Destroy(GameMenu.instance.gameObject);
         Destroy(AudioManager.instance.gameObject);
         Destroy(BattleManager.instance.gameObject);
-        Destroy(theCamera.gameObject);
 
         SceneManager.LoadScene("Main Menu");
         UIFade.instance.FadeFromBlack();

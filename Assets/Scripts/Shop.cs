@@ -21,6 +21,7 @@ public class Shop : MonoBehaviour
     public Item selectedItem;
     public Text buyItemName, buyItemDesc, buyItemValue;
     public Text sellItemName, sellItemDesc, sellItemValue;
+    public int numberOfSelectedItem;
     // Start is called before the first frame update
     void Start()
     {
@@ -120,6 +121,7 @@ public class Shop : MonoBehaviour
         sellItemName.text = selectedItem.itemName;
         sellItemDesc.text = selectedItem.description;
         sellItemValue.text = Mathf.FloorToInt(selectedItem.value * .6f).ToString();
+        numberOfSelectedItem = GameManager.instance.CheckNumberOfItem(selectedItem.itemName);
     }
 
     public void BuyItem()
@@ -139,8 +141,19 @@ public class Shop : MonoBehaviour
     {
         if (selectedItem != null)
         {
-            GameManager.instance.currentGold += Mathf.FloorToInt(selectedItem.value * .6f);
-            GameManager.instance.RemoveItem(selectedItem.itemName);
+            if (numberOfSelectedItem > 0)
+            {
+                GameManager.instance.currentGold += Mathf.FloorToInt(selectedItem.value * .6f);
+                GameManager.instance.RemoveItem(selectedItem.itemName);
+                numberOfSelectedItem--;
+            }
+            if (numberOfSelectedItem == 0)
+            {
+                GameMenu.instance.sellActionWindow.SetActive(false);
+                sellItemName.text = "";
+                sellItemDesc.text = "";
+                sellItemValue.text = "";
+            }
         }
         goldText.text = GameManager.instance.currentGold.ToString();
         ShowSellItems();

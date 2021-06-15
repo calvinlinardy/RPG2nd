@@ -12,36 +12,85 @@ public class DialogActivator : MonoBehaviour
     public bool shouldActivateQuest;
     public string questToMark;
     public bool markComplete;
+    public bool clickToActivate;
+    public bool clickAfterTrigger;
+    public bool destroyAfterLines;
+    AudioSource audioSrc;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        audioSrc = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (canActivate && Input.GetButtonDown("Fire1") && !DialogManager.instance.dialogBox.activeInHierarchy)
+        if (clickToActivate)
         {
-            DialogManager.instance.ShowDialog(lines, isPerson);
-            DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
+            if (canActivate && Input.GetButtonDown("Fire1") && !DialogManager.instance.dialogBox.activeInHierarchy &&
+            !GameMenu.instance.theMenu.activeInHierarchy && BattleManager.instance.battleActive == false)
+            {
+                DialogManager.instance.ShowDialog(lines, isPerson);
+                DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
+                if (audioSrc)
+                {
+                    if (!audioSrc.isPlaying)
+                    {
+                        audioSrc.Play();
+                    }
+                }
+            }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (clickToActivate)
         {
-            canActivate = true;
+            if (other.tag == "Player")
+            {
+                canActivate = true;
+            }
+        }
+        else
+        {
+            if (!DialogManager.instance.dialogBox.activeInHierarchy &&
+                !GameMenu.instance.theMenu.activeInHierarchy && BattleManager.instance.battleActive == false)
+            {
+                if (other.tag == "Player")
+                {
+                    DialogManager.instance.ShowDialog(lines, isPerson);
+                    DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
+                    if (audioSrc)
+                    {
+                        if (!audioSrc.isPlaying)
+                        {
+                            audioSrc.Play();
+                        }
+                    }
+                    if (clickAfterTrigger)
+                    {
+                        clickToActivate = true;
+                        clickAfterTrigger = false;
+                    }
+                    if (destroyAfterLines)
+                    {
+                        this.gameObject.GetComponentInChildren<BoxCollider2D>().enabled = false;
+                    }
+                }
+            }
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (clickToActivate)
         {
-            canActivate = false;
+            if (other.tag == "Player")
+            {
+                canActivate = false;
+            }
         }
     }
 }

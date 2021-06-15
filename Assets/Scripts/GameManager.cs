@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public Item[] referenceItems;
     public bool loadFromMainMenu = false;
     public bool hasGameMenu = false;
+    public int numberOfItemReference;
 
     public int currentGold;
     // Start is called before the first frame update
@@ -50,17 +51,17 @@ public class GameManager : MonoBehaviour
             Player.instance.canMove = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.J)) //TEMPORARY
+        /*if (Input.GetKeyDown(KeyCode.J)) //TEMPORARY
         {
-            AddItem("Iron Armor");
-            AddItem("Blabla");
+            //AddItem("Iron Armor");
+            //AddItem("Blabla");
             AddItem("Health Potion");
 
-            RemoveItem("Leather Armor");
-            RemoveItem("Blublu");
+            //RemoveItem("Leather Armor");
+            //RemoveItem("Blublu");
         }
 
-        if (Input.GetKeyDown(KeyCode.O)) // TEMPORARY
+        /*if (Input.GetKeyDown(KeyCode.O)) // TEMPORARY
         {
             SaveData();
             Debug.Log("Game Saved.");
@@ -70,7 +71,7 @@ public class GameManager : MonoBehaviour
         {
             LoadData();
             Debug.Log("Game Loaded.");
-        }
+        }*/
 
         if (loadFromMainMenu)
         {
@@ -197,6 +198,7 @@ public class GameManager : MonoBehaviour
         else
         {
             Debug.LogError("Couldn't find " + itemToRemove);
+
         }
     }
 
@@ -275,5 +277,17 @@ public class GameManager : MonoBehaviour
             itemsHeld[i] = PlayerPrefs.GetString("ItemInInventory_" + i);
             numberOfItem[i] = PlayerPrefs.GetInt("ItemAmount_" + i);
         }
+    }
+
+    public int CheckNumberOfItem(string itemName)
+    {
+        for (int i = 0; i < itemsHeld[i].Length; i++)
+        {
+            if (itemsHeld[i] == itemName)
+            {
+                numberOfItemReference = numberOfItem[i];
+            }
+        }
+        return numberOfItemReference;
     }
 }

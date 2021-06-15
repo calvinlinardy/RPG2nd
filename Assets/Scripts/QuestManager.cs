@@ -19,7 +19,7 @@ public class QuestManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))// sementara
+        /*if (Input.GetKeyDown(KeyCode.Q))// sementara
         {
             Debug.Log(CheckIfComplete("Quest test"));
             Debug.Log(CheckIfComplete("Enter the cave"));
@@ -37,7 +37,7 @@ public class QuestManager : MonoBehaviour
         {
             LoadQuestData();
             Debug.Log("Game Loaded.");
-        }
+        }*/
     }
 
     public int GetQuestNumber(string questToFind)

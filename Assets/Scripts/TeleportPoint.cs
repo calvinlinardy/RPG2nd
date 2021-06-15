@@ -26,6 +26,19 @@ public class TeleportPoint : MonoBehaviour
             {
                 loadAfterFade = false;
                 sceneLoader.EnteringTeleport(sceneToLoad);
+                AudioManager.instance.StopMusic(musicBox.instance.musicToPlay);
+                /*if (sceneToLoad == "Shop")
+                {
+                    AudioManager.instance.PlayBGM(1);
+                }
+                if (sceneToLoad == "Forest")
+                {
+                    AudioManager.instance.PlayBGM(2);
+                }
+                if (sceneToLoad == "Dungeon")
+                {
+                    AudioManager.instance.PlayBGM(3);
+                }*/
             }
         }
     }

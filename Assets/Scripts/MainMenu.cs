@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
 
     public string newGameScene;
     public GameObject continueButton;
+    public GameObject buttons, howToPlayPanel;
     public bool hasToLoadScene = false;
     public static MainMenu instance;
     // Start is called before the first frame update
@@ -15,14 +16,14 @@ public class MainMenu : MonoBehaviour
     {
         instance = this;
 
-        if (PlayerPrefs.HasKey("Current_Scene"))
+        /*if (PlayerPrefs.HasKey("Current_Scene"))
         {
             continueButton.SetActive(true);
         }
         else
         {
             continueButton.SetActive(false);
-        }
+        }*/
     }
 
     // Update is called once per frame
@@ -38,6 +39,18 @@ public class MainMenu : MonoBehaviour
         GameManager.instance.loadFromMainMenu = true;
     }
 
+    public void OpenHowToPlay()
+    {
+        howToPlayPanel.SetActive(true);
+        buttons.SetActive(false);
+    }
+
+    public void CloseHowToPlay()
+    {
+        howToPlayPanel.SetActive(false);
+        buttons.SetActive(true);
+    }
+
     public void NewGame()
     {
         SceneManager.LoadScene(newGameScene);
@@ -47,5 +60,10 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("Quit Game.");
+    }
+
+    public void PlayButtonSound(int SFx)
+    {
+        AudioManager.instance.PlaySFX(SFx);
     }
 }
